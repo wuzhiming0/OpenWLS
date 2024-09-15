@@ -1,0 +1,39 @@
+﻿<DockPanel  x:Class="OpenWLS.Client.LogInstance.LogToolBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"  Background="White" VerticalAlignment="Center" >
+    <DockPanel.Resources>
+        <Image x:Key="NetOn" Source="..\..\Images\Net.Grn.png"/>
+        <Image x:Key="NetOff" Source="..\..\Images\Net.Wht.png"/>   
+        <Image x:Key="PowerOn" Source="..\..\Images\power_grn.png"/>
+        <Image x:Key="PowerOff" Source="..\..\Images\power_gry.png"/>
+        <Image x:Key="LogDisable" Source="..\..\Images\Play1.Gry.png"/>
+        <Image x:Key="LogStop" Source="..\..\Images\Play1.stop.png"/>
+        <Image x:Key="LogReady" Source="..\..\Images\Play1.wht.png"/>
+        <Image x:Key="LogOn" Source="..\..\Images\Play1.Grn.png"/>
+        <Image x:Key="Check1" Source="..\..\Images\check.1.png"/>
+        <Image x:Key="EditOn" Source="..\..\Images\edit.grn.png"/>
+        <Image x:Key="EditOff" Source="..\..\Images\edit.gry.png"/>
+        <Image x:Key="ScanOn" Source="..\..\Images\scan_tool.png"/>
+        <Image x:Key="ScanOff" Source="..\..\Images\scan_tool.gray.png"/>
+        <Image x:Key="Quest" Source="..\..\Images\org-question.png"/>
+        
+        <Image x:Key="RecOn" Source="..\..\Images\recording.red.png"/>
+        <Image x:Key="RecOff" Source="..\..\Images\recording.gry.png"/>
+        <Image x:Key="IndexTime" Source="..\..\Images\time.2.png"/>
+        <Image x:Key="IndexUp" Source="..\..\Images\depth.up.png"/>
+        <Image x:Key="IndexDown" Source="..\..\Images\depth.down.png"/>
+    </DockPanel.Resources>
+
+    <Button Name="acqContiousBtn"  HorizontalAlignment="Left" Width="40"  BorderThickness="0" Background="White" Click="acqContiousBtn_Click"  />
+    <Button Name="recBtn"  ToolTip="Record" HorizontalAlignment="Left" Width="40"  BorderThickness="0" Background="White" Click="recBtn_Click"   />
+    <Button Name="indexBtn" ToolTip="Log Mode" HorizontalAlignment="Left" Width="40"  BorderThickness="0" Background="White" Click="indexBtn_Click"  />
+    <TextBox Name="timeTb"  MinWidth="50" Height="27" IsEnabled="False" Foreground="Red" FontSize="18" FontWeight="Bold" Margin="5" />
+    <TextBox Name="depthTb" MinWidth="50" Height="27" IsEnabled="False" FontSize="18" FontWeight="Bold" />
+    <Label Name="depthUnitLabel"  FontSize="18" FontWeight="Bold" Height="30" Foreground="Gray"/>    
+    <!--Label Name="stateTb" Content="Edit"  HorizontalAlignment="Right" Width="80"  Background="White"
+        HorizontalContentAlignment="Center" VerticalAlignment="Center"  FontSize="16"  FontWeight="Bold" /-->
+
+</DockPanel>

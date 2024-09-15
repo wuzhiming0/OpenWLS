@@ -1,0 +1,115 @@
+﻿{
+'Top' : 0,
+'Bottom' : 0,
+'IndexScale' : 200,
+'ViewLMargin' : 1,
+'ViewRMargin' : 1,
+'ShowTopInsert' : 1,
+'ShowBottomInsert' : 0,
+'IndexUnit' : 'meter',
+'PatternNames':'',
+'Curves': [
+	{
+		"Id": 0,
+		"Name": "Curve",
+		"Description": "",
+		"M_FileID": -1,
+		"M_Name": null,
+		"M_Frame": null,
+		"Flags": 0,
+		"Scale": 0,
+		"LeftTrack": 0,
+		"RightTrack": 0,
+		"LeftPos": 0,
+		"RightPos": 100,
+		"LineColor": null,
+		"LineThickness": 1,
+		"LineStyle": 0,
+		"LineWrap": 1,
+		"InScrollbar": null
+	}],
+'Images': [
+	{
+		"Id": 0,
+		"Name": "Test",
+		"Description": "",
+		"M_FileID": -1,
+		"M_Name": null,
+		"M_Frame": null,
+		"Flags": 0,
+		"Scale": 0,
+		"LeftTrack": 0,
+		"RightTrack": 0,
+		"LeftPos": 0,
+		"RightPos": 100,
+		"ColorH": null,
+		"ColorL": 0,
+		"ColorM": 0,
+		"CutoffL": 0,
+		"CutoffH": 1,
+		"XMapStart": 0,
+		"XMapInterval": 0,
+		"InScrollbar": null
+	}],
+	'Fills': [
+		{
+			"Id": 0,
+			"Name": "Test",
+			"Description": "",
+			"Flags": 0,
+			"FileID": 1,
+			"FPName": "",
+			"LeftCurve": "",
+			"RightCurve": "",
+			"LeftTrack": 0,
+			"RightTrack": 0,
+			"LeftPos": 0,
+			"RightPos": 100,
+			"ColorF":null,
+			"ColorB": 0,
+			"LeftMode": 0,
+			"RightMode": 0,
+			"InScrollbar": null
+		}],
+'Tracks': [
+	{
+		"Grids": 10,
+		"LogStart": 2,
+		"Linear": 1,
+		"Depth": 0,
+		"TrackDateTime": 0,
+		"Width": 3.0
+	},
+	{
+		"Grids": 1,
+		"LogStart": 2,
+		"Linear": 1,
+		"Depth": 1,
+		"TrackDateTime": 0,
+		"Width": 1
+	},
+	{
+		"Grids": 10,
+		"LogStart": 2,
+		"Linear": 1,
+		"Depth": 0,
+		"TrackDateTime": 0,
+		"Width": 3
+	}],
+	'Scales': [
+	 {   
+		"Id" : 0,
+		"Name" : "Scale",
+		"From" : 0.1,	
+		"To" : 100.1,
+		"Linear" : 1,
+		"Show" : 1
+	}],
+	'DFiles': [
+		{
+			"Id": -1,
+			"Job": null,
+			"Name": null
+		}
+	]			
+}

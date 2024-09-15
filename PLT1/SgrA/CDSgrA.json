@@ -1,0 +1,591 @@
+[
+  {
+    "Name": "GSP",
+    "Phase": [
+      {
+        "Name": "CP",
+        "Matrixes": 9370,
+        "StdData": [
+          {
+            "Name": "slspbkg",
+            "Unit": "cts",
+            "Value": 0
+          },
+          {
+            "Name": "slsp",
+            "Unit": "cts",
+            "Value": 0
+          },
+          {
+            "Name": "grr_bkg",
+            "Unit": "cts/s",
+            "Value": 129.2623
+          },
+          {
+            "Name": "grr_ctsraw",
+            "Unit": "cts/s",
+            "Value": 1021.80145
+          },
+          {
+            "Name": "grr_mult",
+            "Unit": "gAPI/(cts/s)",
+            "Value": 0.168059856
+          },
+          {
+            "Name": "pmat1",
+            "Value": -0.596678734
+          },
+          {
+            "Name": "pmat2",
+            "Value": -0.608846843
+          },
+          {
+            "Name": "pmat3",
+            "Value": 0.0364018828
+          },
+          {
+            "Name": "pmat4",
+            "Value": 0.0418701135
+          },
+          {
+            "Name": "m2pmat1",
+            "Value": -0.8777411
+          },
+          {
+            "Name": "m2pmat2",
+            "Value": -0.534754157
+          },
+          {
+            "Name": "m2pmat3",
+            "Value": 0.03524181
+          },
+          {
+            "Name": "m2pmat4",
+            "Value": 0.0415978
+          },
+          {
+            "Name": "m3pmat1",
+            "Value": -0.384094357
+          },
+          {
+            "Name": "m3pmat2",
+            "Value": -0.136667237
+          },
+          {
+            "Name": "m3pmat3",
+            "Value": 0.0293670632
+          },
+          {
+            "Name": "m3pmat4",
+            "Value": 0.0313090533
+          },
+          {
+            "Name": "grr_bkgapi",
+            "Unit": "gAPI",
+            "Value": 21.7238026
+          },
+          {
+            "Name": "grr_ctsapi",
+            "Unit": "gAPI",
+            "Value": 171.7238
+          },
+          {
+            "Name": "grr_calv",
+            "Unit": "gAPI",
+            "Value": 150
+          },
+          {
+            "Name": "potas_stdrate",
+            "Unit": "cts/s",
+            "Value": 748
+          },
+          {
+            "Name": "potas_cntrate",
+            "Unit": "cts/s",
+            "Value": 751.8697
+          },
+          {
+            "Name": "potas_toolnorm",
+            "Min": 0.9,
+            "Max": 1.1,
+            "Value": 0.994853258
+          },
+          {
+            "Name": "toolnorm",
+            "Value": 0.994853258
+          },
+          {
+            "Name": "slmon",
+            "Value": 0
+          },
+          {
+            "Name": "potas_stdfact",
+            "Value": 0.01169
+          },
+          {
+            "Name": "uran_stdfact",
+            "Value": 0.02668
+          },
+          {
+            "Name": "thor_stdfact",
+            "Value": 0.07158
+          },
+          {
+            "Name": "potas_calfact",
+            "Value": 0.0116298348
+          },
+          {
+            "Name": "uran_calfact",
+            "Value": 0.0265426859
+          },
+          {
+            "Name": "thor_calfact",
+            "Value": 0.0712116
+          },
+          {
+            "Name": "potas_con",
+            "Unit": "pct",
+            "Value": 8.7
+          },
+          {
+            "Name": "uran_con",
+            "Unit": "ppm",
+            "Value": 20
+          },
+          {
+            "Name": "thor_con",
+            "Unit": "ppm",
+            "Value": 53.5
+          },
+          {
+            "Name": "spec_specgn",
+            "Value": 3031
+          },
+          {
+            "Name": "spec_specm",
+            "Value": 70.55702
+          },
+          {
+            "Name": "spec_speca",
+            "Value": 2.63670087
+          },
+          {
+            "Name": "specms",
+            "Value": 70.55702
+          },
+          {
+            "Name": "specas",
+            "Value": 2.63670087
+          },
+          {
+            "Name": "specm",
+            "Value": 70.55702
+          },
+          {
+            "Name": "speca",
+            "Value": 2.63670087
+          },
+          {
+            "Name": "chi_sqr",
+            "Value": 0.320591152
+          },
+          {
+            "Name": "q_cal",
+            "Min": 0.98,
+            "Max": 1.02,
+            "Value": 0.9994133
+          },
+          {
+            "Name": "q_pks",
+            "Value": 5
+          },
+          {
+            "Name": "p1_stdpk",
+            "Value": 25.8
+          },
+          {
+            "Name": "p2_stdpk",
+            "Value": 44.2
+          },
+          {
+            "Name": "p3_stdpk",
+            "Value": 81
+          },
+          {
+            "Name": "p4_stdpk",
+            "Value": 127.4
+          },
+          {
+            "Name": "p5_stdpk",
+            "Value": 159
+          },
+          {
+            "Name": "p1_measpk",
+            "Min": 22.8,
+            "Max": 28.8,
+            "Value": 27.0278854
+          },
+          {
+            "Name": "p2_measpk",
+            "Min": 40.2,
+            "Max": 48.2,
+            "Value": 45.7281342
+          },
+          {
+            "Name": "p3_measpk",
+            "Min": 76,
+            "Max": 86,
+            "Value": 82.081955
+          },
+          {
+            "Name": "p4_measpk",
+            "Min": 121.4,
+            "Max": 133.4,
+            "Value": 127.562164
+          },
+          {
+            "Name": "p5_measpk",
+            "Min": 152,
+            "Max": 166,
+            "Value": 157.653351
+          },
+          {
+            "Name": "p1_fitpk",
+            "Value": 27.4727726
+          },
+          {
+            "Name": "p2_fitpk",
+            "Value": 45.6059265
+          },
+          {
+            "Name": "p3_fitpk",
+            "Value": 81.66057
+          },
+          {
+            "Name": "p4_fitpk",
+            "Value": 127.169846
+          },
+          {
+            "Name": "p5_fitpk",
+            "Value": 158.144379
+          },
+          {
+            "Name": "m4pmat1",
+            "Value": 0.163273245
+          },
+          {
+            "Name": "m4pmat2",
+            "Value": 0.101808622
+          },
+          {
+            "Name": "m4pmat3",
+            "Value": 0.0297889337
+          },
+          {
+            "Name": "m4pmat4",
+            "Value": 0.0253902059
+          }
+        ]
+      },
+      {
+        "Name": "VP",
+        "Matrixes": 10606,
+        "StdData": [
+          {
+            "Name": "slspbkg",
+            "Unit": "cts",
+            "Value": 0
+          },
+          {
+            "Name": "slsp",
+            "Unit": "cts",
+            "Value": 0
+          },
+          {
+            "Name": "grr_bkg",
+            "Unit": "cts/s",
+            "Value": 132.947357
+          },
+          {
+            "Name": "grr_ctsraw",
+            "Unit": "cts/s",
+            "Value": 1058.91467
+          },
+          {
+            "Name": "grr_mult",
+            "Unit": "gAPI/(cts/s)",
+            "Value": 0.168059856
+          },
+          {
+            "Name": "grr_bkgapi",
+            "Unit": "gAPI",
+            "Value": 22.3431129
+          },
+          {
+            "Name": "grr_ctsapi",
+            "Unit": "gAPI",
+            "Value": 177.961044
+          },
+          {
+            "Name": "grr_calv",
+            "Unit": "gAPI",
+            "Min": 135,
+            "Max": 165,
+            "Value": 155.617935
+          },
+          {
+            "Name": "pmat1",
+            "Value": -0.596678734
+          },
+          {
+            "Name": "pmat2",
+            "Value": -0.608846843
+          },
+          {
+            "Name": "pmat1",
+            "Value": -0.596678734
+          },
+          {
+            "Name": "pmat2",
+            "Value": -0.608846843
+          },
+          {
+            "Name": "pmat3",
+            "Value": 0.0364018828
+          },
+          {
+            "Name": "pmat4",
+            "Value": 0.0418701135
+          },
+          {
+            "Name": "m2pmat1",
+            "Value": -0.8777411
+          },
+          {
+            "Name": "m2pmat2",
+            "Value": -0.534754157
+          },
+          {
+            "Name": "m2pmat3",
+            "Value": 0.03524181
+          },
+          {
+            "Name": "m2pmat4",
+            "Value": 0.0415978
+          },
+          {
+            "Name": "m3pmat1",
+            "Value": -0.384094357
+          },
+          {
+            "Name": "m3pmat2",
+            "Value": -0.136667237
+          },
+          {
+            "Name": "m3pmat3",
+            "Value": 0.0293670632
+          },
+          {
+            "Name": "m3pmat4",
+            "Value": 0.0313090533
+          },
+          {
+            "Name": "potas_stdrate",
+            "Unit": "cts/s",
+            "Value": 748
+          },
+          {
+            "Name": "potas_cntrate",
+            "Unit": "cts/s",
+            "Value": 775.970337
+          },
+          {
+            "Name": "potas_toolnorm",
+            "Value": 0.994853258
+          },
+          {
+            "Name": "toolnorm",
+            "Value": 0.994853258
+          },
+          {
+            "Name": "slmon",
+            "Value": 0
+          },
+          {
+            "Name": "potas_stdfact",
+            "Value": 0.01169
+          },
+          {
+            "Name": "uran_stdfact",
+            "Value": 0.02668
+          },
+          {
+            "Name": "thor_stdfact",
+            "Value": 0.07158
+          },
+          {
+            "Name": "potas_calfact",
+            "Value": 0.0116298348
+          },
+          {
+            "Name": "uran_calfact",
+            "Value": 0.0265426859
+          },
+          {
+            "Name": "thor_calfact",
+            "Value": 0.0712116
+          },
+          {
+            "Name": "potas_con",
+            "Unit": "pct",
+            "Min": 7.83,
+            "Max": 9.57,
+            "Value": 9.024406
+          },
+          {
+            "Name": "uran_con",
+            "Unit": "ppm",
+            "Min": 18,
+            "Max": 22,
+            "Value": 20.5963364
+          },
+          {
+            "Name": "thor_con",
+            "Unit": "ppm",
+            "Min": 48.15,
+            "Max": 58.85,
+            "Value": 55.2580872
+          },
+          {
+            "Name": "spec_specgn",
+            "Value": 3031
+          },
+          {
+            "Name": "spec_specm",
+            "Value": 71.7294159
+          },
+          {
+            "Name": "spec_speca",
+            "Value": 2.66188955
+          },
+          {
+            "Name": "specms",
+            "Value": 71.7294159
+          },
+          {
+            "Name": "specas",
+            "Value": 2.66188955
+          },
+          {
+            "Name": "specm",
+            "Value": 71.7294159
+          },
+          {
+            "Name": "speca",
+            "Value": 2.66188955
+          },
+          {
+            "Name": "chi_sqr",
+            "Value": 0.188063979
+          },
+          {
+            "Name": "q_cal",
+            "Min": 0.98,
+            "Max": 1.02,
+            "Value": 1.01586318
+          },
+          {
+            "Name": "q_pks",
+            "Value": 5
+          },
+          {
+            "Name": "p1_stdpk",
+            "Value": 25.8
+          },
+          {
+            "Name": "p2_stdpk",
+            "Value": 44.2
+          },
+          {
+            "Name": "p3_stdpk",
+            "Value": 81
+          },
+          {
+            "Name": "p4_stdpk",
+            "Value": 127.4
+          },
+          {
+            "Name": "p5_stdpk",
+            "Value": 159
+          },
+          {
+            "Name": "p1_measpk",
+            "Min": 22.8,
+            "Max": 28.8,
+            "Value": 27.5121155
+          },
+          {
+            "Name": "p2_measpk",
+            "Min": 40.2,
+            "Max": 48.2,
+            "Value": 46.4758453
+          },
+          {
+            "Name": "p3_measpk",
+            "Min": 76,
+            "Max": 86,
+            "Value": 83.47604
+          },
+          {
+            "Name": "p4_measpk",
+            "Min": 121.4,
+            "Max": 133.4,
+            "Value": 129.292236
+          },
+          {
+            "Name": "p5_measpk",
+            "Min": 152,
+            "Max": 166,
+            "Value": 160.51619
+          },
+          {
+            "Name": "p1_fitpk",
+            "Value": 27.9106445
+          },
+          {
+            "Name": "p2_fitpk",
+            "Value": 46.3451042
+          },
+          {
+            "Name": "p3_fitpk",
+            "Value": 82.99883
+          },
+          {
+            "Name": "p4_fitpk",
+            "Value": 129.264313
+          },
+          {
+            "Name": "p5_fitpk",
+            "Value": 160.753525
+          },
+          {
+            "Name": "m4pmat1",
+            "Value": 0.163273245
+          },
+          {
+            "Name": "m4pmat2",
+            "Value": 0.101808622
+          },
+          {
+            "Name": "m4pmat3",
+            "Value": 0.0297889337
+          },
+          {
+            "Name": "m4pmat4",
+            "Value": 0.0253902059
+          }
+        ]
+      }
+    ]
+  }
+]

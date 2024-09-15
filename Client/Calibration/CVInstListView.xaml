@@ -1,0 +1,124 @@
+﻿<UserControl x:Class="OpenWLS.Client.LogInstance.Calibration.CVInstListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OpenWLS.Client.LogInstance.Calibration"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <local:StatusToTextConverter x:Key="StatusToTextConverter"/>
+    </UserControl.Resources>
+
+    <Grid>
+
+        <ListView x:Name="cvLV">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="60" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Asset" Width="70" DisplayMemberBinding="{Binding Asset }"/>
+                    <GridViewColumn Header="CP" Width="70">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock x:Name="txtCP" Text="{Binding Path=CP, Converter={StaticResource StatusToTextConverter} }"
+                                           MouseEnter="Txt_MouseEnter" MouseLeave="Txt_MouseLeave"  MouseDown="Txt_MouseDown"/>
+                                <DataTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding CP}" Value="2">
+                                        <Setter TargetName="txtCP" Property="Foreground" Value="Green" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding CP}" Value="3">
+                                        <Setter TargetName="txtCP" Property="Foreground" Value="Red" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding CP}" Value="1">
+                                        <Setter TargetName="txtCP" Property="Foreground" Value="Gray" />
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="VP" Width="70">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock x:Name="txtVP" Text="{Binding Path=VP, Converter={StaticResource StatusToTextConverter} }" 
+                                           MouseEnter="Txt_MouseEnter" MouseLeave="Txt_MouseLeave"  MouseDown="Txt_MouseDown"/>
+                                <DataTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding VP}" Value="2">
+                                        <Setter TargetName="txtVP" Property="Foreground" Value="Green" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding VP}" Value="3">
+                                        <Setter TargetName="txtVP" Property="Foreground" Value="Red" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding VP}" Value="1">
+                                        <Setter TargetName="txtVP" Property="Foreground" Value="Gray" />
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="VB" Width="70">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock x:Name="txtVB" Text="{Binding Path=VB, Converter={StaticResource StatusToTextConverter} }"
+                                           MouseEnter="Txt_MouseEnter" MouseLeave="Txt_MouseLeave" MouseDown="Txt_MouseDown"/>
+                                <DataTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding VB}" Value="2">
+                                        <Setter TargetName="txtVB" Property="Foreground" Value="Green" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding VB}" Value="3">
+                                        <Setter TargetName="txtVB" Property="Foreground" Value="Red" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding VB}" Value="1">
+                                        <Setter TargetName="txtVB" Property="Foreground" Value="Gray" />
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="VA" Width="70">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock x:Name="txtVA" Text="{Binding Path=VA, Converter={StaticResource StatusToTextConverter} }"
+                                           MouseEnter="Txt_MouseEnter" MouseLeave="Txt_MouseLeave" MouseDown="Txt_MouseDown"/>
+                                <DataTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding VA}" Value="2">
+                                        <Setter TargetName="txtVA" Property="Foreground" Value="Green" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding VA}" Value="3">
+                                        <Setter TargetName="txtVA" Property="Foreground" Value="Red" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding VA}" Value="1">
+                                        <Setter TargetName="txtVA" Property="Foreground" Value="Gray" />
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                 </GridView>
+
+            </ListView.View>
+            <ListView.GroupStyle>
+                <GroupStyle >
+                    <GroupStyle.ContainerStyle>
+                        <Style TargetType="{x:Type GroupItem}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate >
+                                        <Expander IsExpanded="True">
+                                            <Expander.Header>
+                                                <StackPanel  Orientation="Horizontal">
+                                                    <TextBlock FontWeight="Bold" FontSize="18" Text="{Binding Name}"/>
+                                                </StackPanel>
+                                            </Expander.Header>
+                                            <ItemsPresenter />
+                                        </Expander>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </GroupStyle.ContainerStyle>
+                </GroupStyle>
+            </ListView.GroupStyle>
+        </ListView>
+        <Button  Name="loadBtn" Content="Load" HorizontalAlignment="Right" VerticalAlignment="Top" Height="20" Width="50" Visibility="Hidden"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,229 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>OpenWLS.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="LogInstance\Instrument\InstSub.cs" />
+    <Compile Remove="LogInstance\Instrument\MGroup.cs" />
+    <Compile Remove="DBase\DbContents\UomDbContent.cs" />
+    <Compile Remove="DBase\Models\UOM\TypeOfMeasurement.cs" />
+    <Compile Remove="DBase\Repositories\UomRepository.cs" />
+    <Compile Remove="DFlash\Plt1\AcqDb.cs" />
+    <Compile Remove="DFlash\Plt1\InstDb.cs" />
+    <Compile Remove="DFlash\Plt1\LogHead.cs" />
+    <Compile Remove="DFlash\Plt1\ParaDb.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="GView\ViewDefinition\Dummy.json" />
+    <Content Remove="LogDataFile\XTF\XtfFormat.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="GView\fill_patterns\ANHY.bmp" />
+    <None Remove="GView\fill_patterns\CHRT.bmp" />
+    <None Remove="GView\fill_patterns\Clear.bmp" />
+    <None Remove="GView\fill_patterns\COAL.bmp" />
+    <None Remove="GView\fill_patterns\CONG.bmp" />
+    <None Remove="GView\fill_patterns\CRCL.bmp" />
+    <None Remove="GView\fill_patterns\CROS.bmp" />
+    <None Remove="GView\fill_patterns\DASH.bmp" />
+    <None Remove="GView\fill_patterns\DOLN.bmp" />
+    <None Remove="GView\fill_patterns\DSHY.bmp" />
+    <None Remove="GView\fill_patterns\GRAN.bmp" />
+    <None Remove="GView\fill_patterns\GRWA.bmp" />
+    <None Remove="GView\fill_patterns\LIME.bmp" />
+    <None Remove="GView\fill_patterns\LINE.bmp" />
+    <None Remove="GView\fill_patterns\LITH1.bmp" />
+    <None Remove="GView\fill_patterns\LITH10.bmp" />
+    <None Remove="GView\fill_patterns\LITH11.bmp" />
+    <None Remove="GView\fill_patterns\LITH12.bmp" />
+    <None Remove="GView\fill_patterns\LITH13.bmp" />
+    <None Remove="GView\fill_patterns\LITH14.bmp" />
+    <None Remove="GView\fill_patterns\LITH15.bmp" />
+    <None Remove="GView\fill_patterns\LITH16.bmp" />
+    <None Remove="GView\fill_patterns\LITH17.bmp" />
+    <None Remove="GView\fill_patterns\LITH18.bmp" />
+    <None Remove="GView\fill_patterns\LITH19.bmp" />
+    <None Remove="GView\fill_patterns\LITH2.bmp" />
+    <None Remove="GView\fill_patterns\LITH20.bmp" />
+    <None Remove="GView\fill_patterns\LITH21.bmp" />
+    <None Remove="GView\fill_patterns\LITH22.bmp" />
+    <None Remove="GView\fill_patterns\LITH23.bmp" />
+    <None Remove="GView\fill_patterns\LITH24.bmp" />
+    <None Remove="GView\fill_patterns\LITH25.bmp" />
+    <None Remove="GView\fill_patterns\LITH26.bmp" />
+    <None Remove="GView\fill_patterns\LITH27.bmp" />
+    <None Remove="GView\fill_patterns\LITH28.bmp" />
+    <None Remove="GView\fill_patterns\LITH29.bmp" />
+    <None Remove="GView\fill_patterns\LITH3.bmp" />
+    <None Remove="GView\fill_patterns\LITH30.bmp" />
+    <None Remove="GView\fill_patterns\LITH31.bmp" />
+    <None Remove="GView\fill_patterns\LITH32.bmp" />
+    <None Remove="GView\fill_patterns\LITH33.bmp" />
+    <None Remove="GView\fill_patterns\LITH34.bmp" />
+    <None Remove="GView\fill_patterns\LITH35.bmp" />
+    <None Remove="GView\fill_patterns\LITH36.bmp" />
+    <None Remove="GView\fill_patterns\LITH37.bmp" />
+    <None Remove="GView\fill_patterns\LITH38.bmp" />
+    <None Remove="GView\fill_patterns\LITH39.bmp" />
+    <None Remove="GView\fill_patterns\LITH4.bmp" />
+    <None Remove="GView\fill_patterns\LITH40.bmp" />
+    <None Remove="GView\fill_patterns\LITH41.bmp" />
+    <None Remove="GView\fill_patterns\LITH42.bmp" />
+    <None Remove="GView\fill_patterns\LITH43.bmp" />
+    <None Remove="GView\fill_patterns\LITH44.bmp" />
+    <None Remove="GView\fill_patterns\LITH45.bmp" />
+    <None Remove="GView\fill_patterns\LITH46.bmp" />
+    <None Remove="GView\fill_patterns\LITH47.bmp" />
+    <None Remove="GView\fill_patterns\LITH48.bmp" />
+    <None Remove="GView\fill_patterns\LITH49.bmp" />
+    <None Remove="GView\fill_patterns\LITH5.bmp" />
+    <None Remove="GView\fill_patterns\LITH50.bmp" />
+    <None Remove="GView\fill_patterns\LITH51.bmp" />
+    <None Remove="GView\fill_patterns\LITH52.bmp" />
+    <None Remove="GView\fill_patterns\LITH53.bmp" />
+    <None Remove="GView\fill_patterns\LITH54.bmp" />
+    <None Remove="GView\fill_patterns\LITH55.bmp" />
+    <None Remove="GView\fill_patterns\LITH56.bmp" />
+    <None Remove="GView\fill_patterns\LITH57.bmp" />
+    <None Remove="GView\fill_patterns\LITH58.bmp" />
+    <None Remove="GView\fill_patterns\LITH59.bmp" />
+    <None Remove="GView\fill_patterns\LITH6.bmp" />
+    <None Remove="GView\fill_patterns\LITH60.bmp" />
+    <None Remove="GView\fill_patterns\LITH61.bmp" />
+    <None Remove="GView\fill_patterns\LITH62.bmp" />
+    <None Remove="GView\fill_patterns\LITH7.bmp" />
+    <None Remove="GView\fill_patterns\LITH8.bmp" />
+    <None Remove="GView\fill_patterns\LITH9.bmp" />
+    <None Remove="GView\fill_patterns\LOND.bmp" />
+    <None Remove="GView\fill_patterns\MEDD.bmp" />
+    <None Remove="GView\fill_patterns\OTHR.bmp" />
+    <None Remove="GView\fill_patterns\PERF.bmp" />
+    <None Remove="GView\fill_patterns\RSHY.bmp" />
+    <None Remove="GView\fill_patterns\SALT.bmp" />
+    <None Remove="GView\fill_patterns\SAND.bmp" />
+    <None Remove="GView\fill_patterns\SASI.bmp" />
+    <None Remove="GView\fill_patterns\SHAL.bmp" />
+    <None Remove="GView\fill_patterns\STAR.bmp" />
+    <None Remove="GView\fill_patterns\STST.bmp" />
+    <None Remove="LogDataFile\ldf.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="GView\fill_patterns\ANHY.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\CHRT.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\Clear.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\COAL.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\CONG.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\CRCL.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\CROS.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\DASH.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\DOLN.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\DSHY.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\GRAN.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\GRWA.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LIME.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LINE.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH1.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH10.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH11.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH12.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH13.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH14.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH15.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH16.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH17.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH18.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH19.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH2.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH20.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH21.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH22.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH23.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH24.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH25.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH26.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH27.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH28.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH29.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH3.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH30.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH31.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH32.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH33.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH34.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH35.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH36.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH37.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH38.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH39.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH4.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH40.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH41.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH42.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH43.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH44.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH45.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH46.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH47.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH48.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH49.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH5.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH50.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH51.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH52.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH53.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH54.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH55.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH56.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH57.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH58.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH59.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH6.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH60.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH61.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH62.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH7.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH8.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LITH9.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\LOND.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\MEDD.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\OTHR.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\PERF.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\RSHY.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\SALT.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\SAND.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\SASI.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\SHAL.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\STAR.bmp" />
+    <EmbeddedResource Include="GView\fill_patterns\STST.bmp" />
+    <EmbeddedResource Include="GView\ViewDefinition\Dummy.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="LogDataFile\ldf.db" />
+    <EmbeddedResource Include="LogDataFile\XTF\XtfFormat.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.13" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.118" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DFlash\Plt1\" />
+  </ItemGroup>
+
+</Project>

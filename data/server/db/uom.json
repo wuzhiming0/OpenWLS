@@ -1,0 +1,342 @@
+﻿ [
+      {
+        "Name": "AcousticSlowness",
+       "Internal": "ft",
+        "Selected": "ft",
+        "Default": "ft",
+        "Units": [
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "ft"
+          },
+          {
+            "Add": "0",
+            "Mul": "0.3048",
+            "Text": "m"
+          }
+        ]
+      },
+      {
+
+        "Name": "Attenuation",
+        "Selected": "dB/ft",
+        "Default": "dB/ft",
+        "Units": [
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "dB/ft"
+          },
+          {
+            "Add": "0",
+            "Mul": "3.280839895",
+            "Text": "dB/m"
+          }
+        ]
+      },
+      {
+
+        "Name": "Conductivity",
+       "Internal": "mmho/m",
+        "Selected": "mmho/m",
+        "Default": "mmho/m",
+        "Units": [
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "mmho/m"
+          },
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "mS/m"
+          }
+        ]
+      },
+      {
+
+        "Name": "Depth",
+       "Internal": "DU",
+        "Selected": "ft",
+        "Default": "ft",
+        "Units": [
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "ft"
+          },
+          {
+            "Add": "0",
+            "Mul": "0.3048",
+            "Text": "m"
+          }
+        ]
+      },
+      {
+
+        "Name": "Diameter",
+       "Internal": "in",
+        "Selected": "in",
+        "Default": "in",
+        "Units": [
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "in"
+          },
+          {
+            "Add": "0",
+            "Mul": "25.4",
+            "Text": "mm"
+          },
+          {
+            "Add": "0",
+            "Mul": "2.54",
+            "Text": "cm"
+          }
+        ]
+      },
+
+      {
+
+        "Name": "Length",
+       "Internal": "ft",
+        "Selected": "ft",
+        "Default": "ft",
+        "Units": [
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "ft"
+          },
+          {
+            "Add": "0",
+            "Mul": "0.3048",
+            "Text": "m"
+          },
+          {
+            "Add": "0",
+            "Mul": "3.048",
+            "Text": "dm"
+          }
+        ]
+      },
+      {
+
+       "Name": "degF",
+       "Internal": "degF",
+       "Selected": "degF",
+       "Default": "degF",
+       "Units": [
+        {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "degF"
+          },
+          {
+            "Add": "459.67",
+            "Mul": "1",
+            "Text": "degR"
+          },
+          {
+            "Add": "-17.77777778",
+            "Mul": "0.5555555556",
+            "Text": "degC"
+          },
+          {
+            "Add": "255.37222222",
+            "Mul": "0.55555555556",
+            "Text": "K"
+          }
+        ]
+      },
+      {
+
+        "Name": "degC",
+       "Internal": "degC",
+        "Selected": "degC",
+        "Default": "degC",
+        "Units": [
+          {
+            "Add": "32",
+            "Mul": "1.8",
+            "Text": "degF"
+          },
+          {
+            "Add": "491.67",
+            "Mul": "1.8",
+            "Text": "degR"
+          },
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "degC"
+          },
+          {
+            "Add": "273.15",
+            "Mul": "1",
+            "Text": "K"
+          }
+        ]
+      },
+      {
+
+        "Name": "Temperature",
+       "Internal": "degF",
+        "Selected": "degF",
+        "Default": "degF",
+        "Units": [
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "degF"
+          },
+          {
+            "Add": "459.67",
+            "Mul": "1",
+            "Text": "degR"
+          },
+          {
+            "Add": "-17.77777778",
+            "Mul": "0.5555555556",
+            "Text": "degC"
+          },
+          {
+            "Add": "255.37222222",
+            "Mul": "0.55555555556",
+            "Text": "K"
+          }
+        ]
+      },
+      {
+
+        "Name": "Tension",
+       "Internal": "lbf",
+        "Selected": "lbf",
+        "Default": "lbf",
+        "Units": [
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "lbf"
+          },
+          {
+            "Add": "0",
+            "Mul": "0.45359237",
+            "Text": "kgf"
+          },
+          {
+            "Add": "0",
+            "Mul": "4.44822",
+            "Text": "N"
+          }
+        ]
+      },
+      {
+
+        "Name": "Weight",
+       "Internal": "lb",
+        "Selected": "lb",
+        "Default": "lb",
+        "Units": [
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "lb"
+          },
+          {
+            "Add": "0",
+            "Mul": "0.45359237",
+            "Text": "kg"
+          }
+        ]
+      },
+      {
+
+        "Name": "Volume",
+       "Internal": "ft3",
+        "Selected": "ft3",
+        "Default": "ft3",
+        "Units": [
+          {
+            "Add": "0",
+            "Mul": "1728",
+            "Text": "in3"
+          },
+          {
+            "Add": "0",
+            "Mul": "1",
+            "Text": "ft3"
+          },
+          {
+            "Add": "0",
+            "Mul": "7.48051995397",
+            "Text": "gal"
+          },
+          {
+            "Add": "0",
+            "Mul": "0.17810762",
+            "Text": "bbl"
+          },
+          {
+            "Add": "0",
+            "Mul": "28316.85",
+            "Text": "cm3"
+          },
+          {
+            "Add": "0",
+            "Mul": "28.31685",
+            "Text": "L"
+          },
+          {
+            "Add": "0",
+            "Mul": "0.02831685",
+            "Text": "m3"
+          }
+        ]
+      },
+  {
+
+    "Name": "Volume_Gas",
+    "Internal": "ft3",
+    "Selected": "ft3",
+    "Default": "ft3",
+    "Units": [
+      {
+        "Add": "0",
+        "Mul": "1",
+        "Text": "ft3"
+      },
+      {
+        "Add": "0",
+        "Mul": "0.02831685",
+        "Text": "m3"
+      }
+    ]
+  },
+  {
+
+    "Name": "Time",
+    "Internal": "s",
+    "Selected": "s",
+    "Default": "s",
+    "Units": [
+      {
+        "Add": "0",
+        "Mul": "1",
+        "Text": "s"
+      },
+      {
+        "Add": "0",
+        "Mul": "1000",
+        "Text": "ms"
+      },
+      {
+        "Add": "0",
+        "Mul": "1000000",
+        "Text": "us"
+      }
+    ]
+  }
+    ]

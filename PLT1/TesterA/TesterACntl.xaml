@@ -1,0 +1,24 @@
+﻿<gui_base:InstCntl x:Class="OpenWLS.PLT1.TesterA.TesterACntl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"       
+           xmlns:gui_base="clr-namespace:OpenWLS.Client.LogInstance.Instrument;assembly=Client"  
+             mc:Ignorable="d" 
+             >
+
+    <gui_base:InstCntl.Resources>
+        <Image x:Key="PowerOn" Source="pack://application:,,,/Resources/power_grn.png"/>
+        <Image x:Key="PowerOff" Source="pack://application:,,,/Resources/power_gry.png"/>
+        <Image x:Key="ScanOn" Source="pack://application:,,,/Resources/scan_tool.png"/>
+        <Image x:Key="ScanOff" Source="pack://application:,,,/Resources/scan_tool.gray.png"/>
+    </gui_base:InstCntl.Resources>
+    <Grid>
+        <DockPanel Height="40">
+            <Button Name="powerBtn" ToolTip="Tool Power" HorizontalAlignment="Left" Width="40" 
+                    BorderThickness="0" Background="White" Click="powerBtn_Click"   />
+            <Button Name="scanToolBtn" ToolTip="Scan Tool String" HorizontalAlignment="Right" Width="50" 
+                    BorderThickness="0" Background="White" Click="scanToolBtn_Click"   />
+        </DockPanel>
+    </Grid>
+</gui_base:InstCntl>

@@ -1,0 +1,23 @@
+﻿<gui_inst:InstCntl x:Class="OpenWLS.PLT1.ApA.ApACntl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"       
+            xmlns:local="clr-namespace:OpenWLS.PLT1.ApA"  
+            xmlns:gui_inst="clr-namespace:OpenWLS.Client.LogInstance.Instrument;assembly=Client"  
+           xmlns:gui_base="clr-namespace:OpenWLS.Client.Base;assembly=Client"  
+             mc:Ignorable="d"     >
+    <Grid VerticalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical">
+            <local:DepthCntl x:Name="depthCntl"/>
+            <local:ModemCntl x:Name="modemCntl"/>
+        </StackPanel>
+        <Grid Grid.Row ="1">
+            <Button x:Name="chBtn" VerticalAlignment="Bottom" Content="Check" Click="chBtn_Click"/>
+        </Grid>
+    </Grid>
+</gui_inst:InstCntl>

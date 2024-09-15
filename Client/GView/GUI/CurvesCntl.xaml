@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="OpenWLS.Client.GView.GUI.CurvesCntl" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OpenWLS.Client.GView.GUI" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="500">
+    <Grid>
+        <local:VdItemList x:Name="listCntl" HorizontalAlignment="Left" 
+                          VerticalAlignment="Stretch" Width="120"  
+                          AddNewItem="listCntl_AddNewItem"
+                          DeleteItem="listCntl_DeleteItem"
+                          SelectionChanged="listCntl_SelectionChanged"/>
+        <local:CurveCntl x:Name="curveCntl" HorizontalAlignment="Left" Margin="121,1,-1,-1"  VerticalAlignment="Stretch"/>
+    </Grid>
+</UserControl>

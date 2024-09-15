@@ -1,0 +1,72 @@
+﻿<gui_inst:InstCntl x:Class="OpenWLS.PLT1.MemA.MemACntl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"     
+             xmlns:gui_inst="clr-namespace:OpenWLS.Client.LogInstance.Instrument;assembly=Client" 
+             xmlns:gui_base="clr-namespace:OpenWLS.Client.Base;assembly=Client"        
+             mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="300"
+                    IsVisibleChanged="UserControl_IsVisibleChanged" >
+    <gui_inst:InstCntl.Resources>
+        <Image x:Key="EFlashOff" Source="pack://application:,,,/Resources/flash.blk.jpg"/>
+        <Image x:Key="EFlashOn" Source="pack://application:,,,/Resources/flash.grn.jpg"/>
+        <Image x:Key="EFlashScan" Source="pack://application:,,,/Resources/flash.bg.jpg"/>
+        <!--Image x:Key="EFlashBusy" Source="pack://application:,,,/Resources/flash.red.jpg"/-->            
+    </gui_inst:InstCntl.Resources>      
+        <TabControl x:Name ="mainTab"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" TabStripPlacement="Bottom" >
+            <TabItem  x:Name ="dfTi" Header="DataFiles">    
+                <DockPanel  HorizontalAlignment="Stretch" LastChildFill="true" >
+                    <DockPanel DockPanel.Dock="Bottom" Height="60"  LastChildFill="true">
+                        <Button  Name="flashBtn" DockPanel.Dock="Right"  HorizontalAlignment="Right" Width="80"  BorderThickness="0" Background="White" Click="flashBtn_Click"   >
+                        </Button>
+                        <gui_base:StorageCntl Name="efInforView" DockPanel.Dock="Left" HorizontalAlignment="Stretch"/>   
+                    </DockPanel>
+                    <Grid DockPanel.Dock="Bottom" Height="25"   >
+                    <Button  Name="UploadBtn" Content="Upload"   HorizontalAlignment="Left" Width="60" Click="UploadBtn_Click" Margin="3,2,0,3"  >
+                        </Button>
+                    <Button  Name="NewBtn" Content="New"  HorizontalAlignment="Left" Width="60"  Margin="76,2,0,3" Click="NewBtn_Click"  >
+                    </Button>
+                    <Button  Name="EraseBtn" Content="Erase"  HorizontalAlignment="Right" Width="60"   Margin="0,2,3,3" Click="EraseBtn_Click"  >
+                    </Button>                        
+                </Grid>
+                <ListView Name="dfsLisView" ItemsSource="{Binding}"  VerticalContentAlignment="Stretch" >
+                    <ListView.GroupStyle>
+                    </ListView.GroupStyle>
+
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding Name}" />
+                            <GridViewColumn Header="StartTime" Width="80" />
+                            <GridViewColumn Header="Period" Width="70" />
+                            <GridViewColumn Header="Size" Width="80" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </DockPanel >
+        </TabItem>
+
+            <TabItem x:Name ="ScriptTi" Header="Script">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />                    
+                </Grid.RowDefinitions>
+                
+                    <Grid Height="23" Grid.Row="1" Margin="2">
+                    <Button Content="New" Height="23" Width="40"  HorizontalAlignment="Left"/>
+                    <Button Content="Open" Height="23" Width="40"  HorizontalAlignment="Left" Margin="48,0,0,0" />     
+                   
+                    <Button Content="Save" Height="23" Width="40"  HorizontalAlignment="Left" Margin="94,0,0,0" />
+                        
+                    <Button Content="Upload" Height="23" Width="50"  HorizontalAlignment="Right" Margin="0,0,70,0" />    
+                    <Button Content="Program" Height="23" Width="65"  HorizontalAlignment="Right" />  
+                </Grid>                
+            </Grid>
+
+            </TabItem>
+
+
+        </TabControl>
+       
+
+</gui_inst:InstCntl>

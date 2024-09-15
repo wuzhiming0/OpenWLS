@@ -1,0 +1,159 @@
+ [
+      {
+         "Name": "GSP",
+         "Phases": "CP,VP",
+         "Tables": [
+            {
+               "Name": "GR",
+               "Rows": "GR-SL(.06-3.5),grr_bkg,grr_ctsraw,grr_mult,grr_bkgapi,grr_ctsapi,grr_calv",
+               "Columns": [
+                  {
+                     "Text": null,
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Background",
+                     "Unit": "cts/s",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Calibrator On",
+                     "Unit": "cts/s",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Multiplier",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Background",
+                     "Unit": "gAPI",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Calibrator On",
+                     "Unit": "gAPI",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Calibrator Value",
+                     "Unit": "gAPI",
+                     "Width": 1.1
+                  }
+               ]
+            },
+            {
+               "Name": "UTK",
+               "Rows": "E(.15-3.0),potas_stdrate,potas_cntrate,potas_toolnorm,,,,\n\t\t\tK,,,,potas_stdfact,potas_calfact,potas_con,\n\t\t\tU,,,,uran_stdfact,uran_calfact,uran_con,\n\t\t\tTh,,,,thor_stdfact,thor_calfact,thor_con,",
+               "Columns": [
+                  {
+                     "Text": null,
+                     "Width": 1
+                  },
+                  {
+                     "Text": "STD Rate",
+                     "Unit": "cts/s",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Meas Rate",
+                     "Unit": "cts/s",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Tool Norm",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "STD Mult",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Log Mult",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "App Con",
+                     "Unit": "pct ppm",
+                     "Width": 1
+                  }
+               ]
+            },
+            {
+               "Name": "Spectrum",
+               "Rows": "Spectrum,speccm,speca,chi_sqr,q_cal,spec_specgn,q_pks",
+               "Columns": [
+                  {
+                     "Text": null,
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Multi",
+                     "Unit": "chnl/Mev",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Add",
+                     "Unit": "chnls",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "Chi Sqr",
+                     "Unit": "qsa",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "QCAL",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "GAIN",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "QPKS",
+                     "Width": 1
+                  }
+               ]
+            },
+            {
+               "Name": "Peaks",
+               "Rows": "Std PK,p1_stdpk,p2_stdpk,p3_stdpk,p4_stdpk,p5_stdpk,\n\t\t\tMeas PK,p1_measpk,p2_measpk,p3_measpk,p4_measpk,p5_measpk,\n\t\t\tFit PK,p1_fitpk,p2_fitpk,p3_fitpk,p4_fitpk,p5_fitpk,",
+               "Columns": [
+                  {
+                     "Text": null,
+                     "Width": 1.5
+                  },
+                  {
+                     "Text": "P1",
+                     "Unit": ".352Mev",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "P2",
+                     "Unit": ".609Mev",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "P3",
+                     "Unit": "1.12Mev",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "P4",
+                     "Unit": "1.765Mev",
+                     "Width": 1
+                  },
+                  {
+                     "Text": "P5",
+                     "Unit": "2.204Mev",
+                     "Width": 1
+                  }
+               ]
+            }
+         ]
+      }
+]
+
+	  
+   

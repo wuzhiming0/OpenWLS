@@ -1,0 +1,145 @@
+﻿<Window x:Class="OpenWLS.Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock"
+        xmlns:dock="clr-namespace:OpenWLS.Client.Dock"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="OpenWLS - " Height="750" Width="1300" Closing="Window_Closing" Closed="Window_Closed">
+    <DockPanel Name ="mainPanel">
+        <Menu DockPanel.Dock="Top" x:Name="mainMenu">
+            <MenuItem Header="LogInstance" >
+                <MenuItem Header="New"  Click="NewLi_Click" IsEnabled="{Binding NewLi}"/>
+                <MenuItem Header="Playback"  Click="PlaybackLi_Click" IsEnabled="{Binding Playback}"/>                
+                <MenuItem Header="Close" Click="CloseLi_Click" IsEnabled="{Binding Close}"/>
+                
+                <MenuItem Header="Connect"  Click="ConnectLi_Click" IsEnabled="{Binding Connect}"/>
+                <MenuItem Header="Disconnect" Click="DisconnectLi_Click" IsEnabled="{Binding Disconnect}"/>                 
+                <MenuItem Header="OperationDoc" >
+                    <MenuItem Header="New" Click="NewOcf_Click" IsEnabled="{Binding New}" />
+                    <MenuItem Header="Open"  Click="OpenOcf_Click" IsEnabled="{Binding Open}"/>
+                    <MenuItem Header="Check"  Click="CheckOcf_Click" IsEnabled="{Binding Check}"/>
+                    <MenuItem Header="Run" Click="RunOcf_Click" IsEnabled="{Binding NewOcf}" />                   
+                    <MenuItem Header="Save" Click="SaveOcf_Click" IsEnabled="{Binding Save}"/>
+                    <MenuItem Header="SaveAs" Click="SaveAsOcf_Click" IsEnabled="{Binding SaveAs}"/>
+                </MenuItem>
+                <MenuItem Header="Edge" Click="Edge_Click" IsEnabled="{Binding Edge}"/>
+                <MenuItem Header="Exit" Click="ExitApplication" IsEnabled="{Binding Exit}"/>
+            </MenuItem>
+            <MenuItem Header="Edit"/>
+
+            <MenuItem Header="Presentation"  >
+                <MenuItem Name ="newNrtDisplayMenuItem" Header="New(Offline)" Click="newNrtDisplayMenuItem_Click" />
+                <MenuItem Name ="newRtDisplayMenuItem" Header="New(Realtime)" Click="newRtDisplayMenuItem_Click" IsEnabled="{Binding NewRtVdf}"/>                
+                <MenuItem Name ="openDisplayMenuItem" Header="Open" Click="openDisplayMenuItem_Click" />
+                <!--MenuItem Name ="saveDisplayMenuItem" Header="Save" Click="saveDisplayMenuItem_Click" />   
+                <MenuItem Name ="saveAsDisplayMenuItem" Header="SaveAs" Click="saveAsDisplayMenuItem_Click" /-->
+                <MenuItem Name ="headerMenuItem" Header="Header" Click="headerMenuItem_Click" />
+                <MenuItem Name ="plotManMenuItem" Header="PlotMan" Click="plotManMenuItem_Click" />
+
+            </MenuItem>
+
+            <MenuItem Header="DataFile"  SubmenuOpened="dfMenuItem_SubmenuOpened">
+                <MenuItem Header="Open" Click="openDFile_Click">
+                </MenuItem>
+                <MenuItem Header="Import" Click="ImportDFile_Click">
+                </MenuItem>
+                <MenuItem Header="Export" x:Name="dfExportMenu" >
+                    <MenuItem Header="LAS" >
+                        <MenuItem Header="V2.0" Click="ExportLasV2_Click" />
+                        <MenuItem Header="V3.0" Click="ExportLasV3_Click" />
+                    </MenuItem>
+                    <MenuItem Header="DLIS" Click="ExportDlis_Click"/>
+                </MenuItem>
+
+            </MenuItem>
+
+            <MenuItem Header="Calibration" IsEnabled="True" >
+                <MenuItem Header="Show CVMain" x:Name="cvMainMenu"  Click="cvMainMenu_Click"/>
+                <MenuItem Header="Load" IsEnabled="{Binding CalLoad}"/>
+
+                <MenuItem Header="Instrument" x:Name="caliInstMeniItem" IsEnabled="{Binding CalStoredInTool}">
+                    <MenuItem Header="Download" />
+                    <MenuItem Header="Upload" />
+                </MenuItem>
+                <MenuItem Header="CV Manager" Click="cvManMenuItem_Click" />
+            </MenuItem>
+
+            <MenuItem Name ="JobMenuItem" Header="Job" Click="JobMenuItem_Click" IsEnabled="{Binding Job}" >
+            </MenuItem>
+            <MenuItem Header="Utilities">
+                <MenuItem Header="Select Unit" Click="SelectUnit_Click"/>
+            </MenuItem>
+            <MenuItem Name ="windowsMenuItem" Header="Windows" SubmenuOpened="windowsMenuItem_Click"  >
+                <MenuItem x:Name="apiWinMenu" Header="LogInstance" Click="windows_Click"/>
+                <MenuItem x:Name="n1dWinMenu" Header="N1D" Click="windows_Click"/>
+                <MenuItem x:Name="sysLogWinMenu" Header="SysLog" Click="windows_Click"/>
+            </MenuItem>
+            <MenuItem Header="?" Click="aboutMenuItem_Click"/>
+        </Menu>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="57*"/>
+                <ColumnDefinition Width="593*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <xcad:DockingManager x:Name="dockManager" Grid.Row="1" 
+                           AllowMixedOrientation="True"
+                           BorderBrush="Black"
+                           BorderThickness="0" Grid.ColumnSpan="2"                           >
+                <xcad:DockingManager.Theme>
+                    <xcad:AeroTheme />
+                </xcad:DockingManager.Theme>
+
+                <xcad:DockingManager.DocumentHeaderTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding IconSource}" Margin="0,0,4,0"/>
+                            <TextBlock Text="{Binding Title}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </xcad:DockingManager.DocumentHeaderTemplate>
+                <xcad:LayoutRoot x:Name="_layoutRoot">
+                    <xcad:LayoutPanel Orientation="Horizontal">
+                        <xcad:LayoutAnchorablePane DockWidth="280">
+                            <dock:DockControl   x:Name="liDock"  Title="Log Instance" ContentId="api" IconSource="Images/address-book-open.png">
+                            </dock:DockControl>
+                        </xcad:LayoutAnchorablePane>
+
+                        <xcad:LayoutAnchorablePane DockWidth="100">
+                            <dock:DockControl   x:Name="n1dDock"  Title="N1D" ContentId="insts" IconSource="Images/address-book-open.png">
+                            </dock:DockControl>
+                        </xcad:LayoutAnchorablePane>
+                        <xcad:LayoutDocumentPaneGroup >
+                            <xcad:LayoutDocumentPane x:Name="docPane">
+
+                            </xcad:LayoutDocumentPane>
+                        </xcad:LayoutDocumentPaneGroup >
+                        <xcad:LayoutAnchorablePaneGroup DockWidth="300" >
+                            <xcad:LayoutAnchorablePane >
+                                <dock:DockControl x:Name="syslogDock" ContentId="syslog" Title="Syslog"  >
+                                </dock:DockControl>
+                            </xcad:LayoutAnchorablePane>
+                        </xcad:LayoutAnchorablePaneGroup>
+                    </xcad:LayoutPanel>
+
+                    <xcad:LayoutRoot.BottomSide >
+                        <xcad:LayoutAnchorSide x:Name="botSideL2">
+                            <xcad:LayoutAnchorGroup  x:Name="displayDockGrp" >
+
+                            </xcad:LayoutAnchorGroup>
+                        </xcad:LayoutAnchorSide>
+                    </xcad:LayoutRoot.BottomSide>
+                </xcad:LayoutRoot>
+            </xcad:DockingManager>
+
+        </Grid>
+    </DockPanel>
+</Window>

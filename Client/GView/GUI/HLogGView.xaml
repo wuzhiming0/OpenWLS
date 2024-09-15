@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="OpenWLS.Client.GView.GUI.HLogGView1" 
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:gev="clr-namespace:OpenWLS.Client.GView.Models"    
+             xmlns:local="clr-namespace:OpenWLS.Client.GView.GUI" 
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="600">
+    <Grid x:Name="gridCntl"  SizeChanged="viewCntl_SizeChanged">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="290" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <local:PdEditorCntl x:Name="editorCntl" Grid.Row="0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <GridSplitter 
+                      HorizontalAlignment ="Center"
+                      VerticalAlignment ="Stretch"  
+                      Grid.Row="1"   
+                      Width="5" Background="Silver">
+        </GridSplitter>        
+        <Grid x:Name="viewCntl"  VerticalAlignment="Stretch" Grid.Row="2"  Background="White">
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />                    
+                </Grid.ColumnDefinitions>
+                <WindowsFormsHost x:Name="insertCntl" Height="200" Grid.Column="0"/>
+                <Grid   Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition ></RowDefinition>
+                        <RowDefinition Height="Auto" />
+                    <RowDefinition x:Name="r2Def"></RowDefinition>
+                    </Grid.RowDefinitions>
+                     <WindowsFormsHost x:Name="plotCntl" Grid.Row="0"  SizeChanged="plotCntl_SizeChanged" VerticalAlignment="Stretch"/>
+                    <GridSplitter  Grid.Row="1"  Height ="5" VerticalAlignment="Center"  HorizontalAlignment="Stretch"/>
+                    <local:GViewScrollbar x:Name="hScrollBar"  Grid.Row="2" MinHeight="20" Orientation="Horizontal" Scroll="hScrollBar_Scroll"/>
+                </Grid>
+            <ScrollBar x:Name="vScrollBar" Orientation="Vertical" Grid.Column="2"  Scroll="vScrollBar_Scroll"/>                
+            </Grid>
+
+        
+
+
+    </Grid>
+</UserControl>

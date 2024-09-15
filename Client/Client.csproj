@@ -1,0 +1,189 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.17763.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>OpenWLS.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <Compile Remove="DockControl.xaml.cs" />
+    <Compile Remove="DockDocument.xaml.cs" />
+    <Compile Remove="GView\GUI\HLogGView.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\add.png" />
+    <None Remove="Images\address-book--pencil.png" />
+    <None Remove="Images\address-book-open.png" />
+    <None Remove="Images\alarm-clock-blue.png" />
+    <None Remove="Images\arrow-thick-left.blu.png" />
+    <None Remove="Images\arrow-thick-left.gry.jpg" />
+    <None Remove="Images\arrow-thick-right.blu.jpg" />
+    <None Remove="Images\arrow-thick-right.gry.jpg" />
+    <None Remove="Images\calibration.blk.png" />
+    <None Remove="Images\calibration.gry.png" />
+    <None Remove="Images\check.1.png" />
+    <None Remove="Images\copy.gry.png" />
+    <None Remove="Images\copy.png" />
+    <None Remove="Images\delete.png" />
+    <None Remove="Images\Delete_Icon.gry.png" />
+    <None Remove="Images\Delete_Icon.png" />
+    <None Remove="Images\depth.down.png" />
+    <None Remove="Images\depth.up.png" />
+    <None Remove="Images\detail_list.png" />
+    <None Remove="Images\document.png" />
+    <None Remove="Images\down.png" />
+    <None Remove="Images\edit.grn.png" />
+    <None Remove="Images\edit.gry.png" />
+    <None Remove="Images\flash.bg.jpg" />
+    <None Remove="Images\flash.blk.jpg" />
+    <None Remove="Images\flash.grn.jpg" />
+    <None Remove="Images\flash.red.jpg" />
+    <None Remove="Images\grid_home_256.png" />
+    <None Remove="Images\grid_home_gray.png" />
+    <None Remove="Images\icon_list.png" />
+    <None Remove="Images\left_arrow.jpg" />
+    <None Remove="Images\Net.Grn.png" />
+    <None Remove="Images\Net.Wht.png" />
+    <None Remove="Images\new.png" />
+    <None Remove="Images\org-question.png" />
+    <None Remove="Images\paste.gry.png" />
+    <None Remove="Images\paste.png" />
+    <None Remove="Images\Play1.Grn.png" />
+    <None Remove="Images\Play1.Gry.png" />
+    <None Remove="Images\Play1.stop.png" />
+    <None Remove="Images\Play1.wht.png" />
+    <None Remove="Images\Play2.Grn.png" />
+    <None Remove="Images\Play2.Gry.png" />
+    <None Remove="Images\Play2.wht.png" />
+    <None Remove="Images\playback.png" />
+    <None Remove="Images\power_grn.png" />
+    <None Remove="Images\power_gry.png" />
+    <None Remove="Images\power_off.png" />
+    <None Remove="Images\power_on.png" />
+    <None Remove="Images\power_purple..png" />
+    <None Remove="Images\power_red.png" />
+    <None Remove="Images\Printer.png" />
+    <None Remove="Images\property-blue.png" />
+    <None Remove="Images\recording.gry.png" />
+    <None Remove="Images\recording.red.png" />
+    <None Remove="Images\save.svg.png" />
+    <None Remove="Images\scan_tool.gray.png" />
+    <None Remove="Images\scan_tool.png" />
+    <None Remove="Images\search_document.gry.png" />
+    <None Remove="Images\search_document.png" />
+    <None Remove="Images\time.1.png" />
+    <None Remove="Images\time.2.png" />
+    <None Remove="Images\toolstring_grn.png" />
+    <None Remove="Images\up.png" />
+    <None Remove="Images\update-icon.gry.png" />
+    <None Remove="Images\update-icon.png" />
+    <None Remove="Images\update.jpg" />
+    <None Remove="Images\usb-off.png" />
+    <None Remove="Images\usb-on.png" />
+    <None Remove="Images\usb.dis.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="DockControl.xaml" />
+    <Page Remove="DockDocument.xaml" />
+    <Page Remove="GView\GUI\HLogGView.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="WinForms.DataVisualization" Version="1.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Server\Server.csproj" />
+    <ProjectReference Include="..\Xceed\Xceed.Wpf.AvalonDock.Themes.Aero\Xceed.Wpf.AvalonDock.Themes.Aero.csproj" />
+    <ProjectReference Include="..\Xceed\Xceed.Wpf.AvalonDock\Xceed.Wpf.AvalonDock.csproj" />
+    <ProjectReference Include="..\Xceed\Xceed.Wpf.Toolkit\Xceed.Wpf.Toolkit.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\add.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\address-book--pencil.png" />
+    <Resource Include="Images\address-book-open.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\alarm-clock-blue.png" />
+    <Resource Include="Images\arrow-thick-left.blu.png" />
+    <Resource Include="Images\arrow-thick-left.gry.jpg" />
+    <Resource Include="Images\arrow-thick-right.blu.jpg" />
+    <Resource Include="Images\arrow-thick-right.gry.jpg" />
+    <Resource Include="Images\calibration.blk.png" />
+    <Resource Include="Images\calibration.gry.png" />
+    <Resource Include="Images\check.1.png" />
+    <Resource Include="Images\copy.gry.png" />
+    <Resource Include="Images\copy.png" />
+    <Resource Include="Images\delete.png" />
+    <Resource Include="Images\Delete_Icon.gry.png" />
+    <Resource Include="Images\Delete_Icon.png" />
+    <Resource Include="Images\depth.down.png" />
+    <Resource Include="Images\depth.up.png" />
+    <Resource Include="Images\detail_list.png" />
+    <Resource Include="Images\document.png" />
+    <Resource Include="Images\down.png" />
+    <Resource Include="Images\edit.grn.png" />
+    <Resource Include="Images\edit.gry.png" />
+    <Resource Include="Images\flash.bg.jpg" />
+    <Resource Include="Images\flash.blk.jpg" />
+    <Resource Include="Images\flash.grn.jpg" />
+    <Resource Include="Images\flash.red.jpg" />
+    <Resource Include="Images\grid_home_256.png" />
+    <Resource Include="Images\grid_home_gray.png" />
+    <Resource Include="Images\icon_list.png" />
+    <Resource Include="Images\left_arrow.jpg" />
+    <Resource Include="Images\Net.Grn.png" />
+    <Resource Include="Images\Net.Wht.png" />
+    <Resource Include="Images\new.png" />
+    <Resource Include="Images\org-question.png" />
+    <Resource Include="Images\paste.gry.png" />
+    <Resource Include="Images\paste.png" />
+    <Resource Include="Images\Play1.Grn.png" />
+    <Resource Include="Images\Play1.Gry.png" />
+    <Resource Include="Images\Play1.stop.png" />
+    <Resource Include="Images\Play1.wht.png" />
+    <Resource Include="Images\Play2.Grn.png" />
+    <Resource Include="Images\Play2.Gry.png" />
+    <Resource Include="Images\Play2.wht.png" />
+    <Resource Include="Images\playback.png" />
+    <Resource Include="Images\power_grn.png" />
+    <Resource Include="Images\power_gry.png" />
+    <Resource Include="Images\power_off.png" />
+    <Resource Include="Images\power_on.png" />
+    <Resource Include="Images\power_purple..png" />
+    <Resource Include="Images\power_red.png" />
+    <Resource Include="Images\Printer.png" />
+    <Resource Include="Images\property-blue.png" />
+    <Resource Include="Images\recording.gry.png" />
+    <Resource Include="Images\recording.red.png" />
+    <Resource Include="Images\save.svg.png" />
+    <Resource Include="Images\scan_tool.gray.png" />
+    <Resource Include="Images\scan_tool.png" />
+    <Resource Include="Images\search_document.gry.png" />
+    <Resource Include="Images\search_document.png" />
+    <Resource Include="Images\time.1.png" />
+    <Resource Include="Images\time.2.png" />
+    <Resource Include="Images\toolstring_grn.png" />
+    <Resource Include="Images\up.png" />
+    <Resource Include="Images\update-icon.gry.png" />
+    <Resource Include="Images\update-icon.png" />
+    <Resource Include="Images\update.jpg" />
+    <Resource Include="Images\usb-off.png" />
+    <Resource Include="Images\usb-on.png" />
+    <Resource Include="Images\usb.dis.bmp" />
+  </ItemGroup>
+
+</Project>

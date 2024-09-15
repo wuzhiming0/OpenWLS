@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="OpenWLS.Client.GView.GUI.VdItemCntl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="80" Width="220">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="94,2,0,0" TextWrapping="Wrap" Text="{Binding Name, Mode=TwoWay}" VerticalAlignment="Top"  Width="120"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="94,30,0,0" TextWrapping="Wrap" Text="{Binding Description, Mode=TwoWay}" VerticalAlignment="Top" Width="120"/>
+        <CheckBox Content="Name" HorizontalAlignment="Left" Margin="4,8,0,0" VerticalAlignment="Top" IsChecked="{Binding ShowName, Mode=TwoWay}"/>
+        <CheckBox Content="Enable" HorizontalAlignment="Left" Margin="6,60,0,0" VerticalAlignment="Top" IsChecked="{Binding Enable, Mode=TwoWay}" Width="63"/>
+        <CheckBox Content="Description" HorizontalAlignment="Left" Margin="5,34,0,0" VerticalAlignment="Top"  IsChecked="{Binding ShowDescription, Mode=TwoWay}"/>
+        <CheckBox Content="Head" HorizontalAlignment="Left" Margin="94,60,0,0" VerticalAlignment="Top" Width="63" IsChecked="{Binding ShowHead, Mode=TwoWay}"/>
+
+    </Grid>
+</UserControl>

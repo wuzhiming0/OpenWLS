@@ -1,0 +1,35 @@
+CN:Company Name::
+CN1:Company Name (ctd.)::
+FN:Field Name::NB
+FL:Field Location::
+FL1:Field Location (line 1)::
+FL2:Field Location (line 2)::
+WN:Well Name::m16
+APIN:API Serial Number::
+LATI:Latitude::
+LONG:Longitude::
+CONT:Continent::
+NATI:Nation::
+SLAB:State/Province/..::
+nSTAT:State/Province::
+CLAB:County/Rig/..::
+COUN:County/Rig::
+RANG:Range::
+SECT:Section::
+TOWN:Township::
+UWID:Unique Well Identifier::m16
+PDAT:Permanent Datum::
+EPD:Elevation of Permanent Datum::-999.25
+LMF:Logging Measured Datum::
+APD:Above Permanent Datum::-999.25
+EKB:Elevation of Kelly Bushing::-999.25
+EDF:Elevation of Drill Floor::-999.25
+EGL:Elevation of Ground Level::-999.25
+PROCESS_DATE:Processing DATE::Jul 31 13:05:26 2006
+LOG_ANALYST:Analyst's Name::
+JLABEL:Job Label::
+JOBID:Job Reference::
+ICS_CENTER:Schlumberger Processing Center::
+QCEN:LQC Engineer's Name::
+DLQC:Date of Log Quality Control::
+GF_BASELINE:GeoFrame Version::4.2"

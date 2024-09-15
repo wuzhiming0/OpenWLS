@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="OpenWLS.Client.GView.GUI.PdGenCntl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OpenWLS.Client.GView.GUI"
+             xmlns:CVI="clr-namespace:OpenWLS.Server.GView.ViewDefinition;assembly=Server"     
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"   
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="350">
+    <StackPanel Orientation="Vertical">
+        <Grid>
+            <Label Content="Top" Margin="25,35,0,0" />
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="88,35,0,0"  VerticalAlignment="Top" Width="82" Text="{Binding Top, Mode=TwoWay}" />
+            <TextBox x:Name="topMinCntl" HorizontalAlignment="Left" Height="23" Margin="238,35,0,0"  VerticalAlignment="Top" Width="88" IsReadOnly="True"/>
+            <Label Content="Bottom" Margin="25,63,0,0" />
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="88,65,0,0"  VerticalAlignment="Top" Width="82" Text="{Binding Bottom, Mode=TwoWay}" />
+            <TextBox x:Name="botMaxCntl" HorizontalAlignment="Left" Height="23" Margin="238,65,0,0"  VerticalAlignment="Top" Width="88" IsReadOnly="True"/>
+            <Button Content= '&lt;'  HorizontalAlignment="Left" Margin="195,48,0,0" VerticalAlignment="Top" Width="25" Height="25" Click="SetIndexes_Btn_Click"/>
+            <Label Content="Data Files" Margin="238,4,0,0" Height="25" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="View" Margin="109,5,0,0" Height="25" Width="60" HorizontalAlignment="Left" VerticalAlignment="Top" />
+
+        </Grid>
+        <Grid>
+            <Label Content="Unit" Margin="30,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <ComboBox x:Name="indexUnitCntl" Margin="89,10,183,74" Height="23"
+                    SelectedItem="{Binding IndexUnit, Mode=TwoWay}" SelectionChanged="indexUnitCntl_SelectionChanged"/>
+            <Grid x:Name="scaleGrid" >
+                <Label Content="Scale  1/" Margin="176,8,0,0" />
+                <ComboBox  x:Name="indexScale" Margin="237,8,0,0"  Height="23"  HorizontalAlignment="Left" VerticalAlignment="Top"
+                    SelectedItem="{Binding IndexScale,  Mode=TwoWay}"                               
+                     IsEditable="True" Width="85"/>
+            </Grid>
+            <Grid x:Name="minorGrid">
+                <Label Content="Minor" Margin="176,8,0,0" Height="23"  HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <ComboBox  x:Name="minorCb" Margin="238,8,0,0"  Height="23"  HorizontalAlignment="Left" VerticalAlignment="Top"
+                        SelectedItem="{Binding DTMinor,  Mode=TwoWay}"                               
+                         IsEditable="True" Width="86"/>
+            </Grid>
+            <Label Content="Orientation" Margin="166,45,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <ComboBox  x:Name="orientionCb" Margin="236,45,0,0"  Height="23"  HorizontalAlignment="Left" VerticalAlignment="Top"
+                          SelectedItem="{Binding Orientation,  Mode=TwoWay}"   Width="87">
+            </ComboBox>
+            <Label Content="Scroll Zoom" Margin="25,45,0,0"  HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+            <xctk:ColorPicker x:Name="colorLCntl" HorizontalAlignment="Left" Margin="105,45,0,0" VerticalAlignment="Top" Width="59" SelectedColor="{Binding IndexBarMaskColor, Mode=TwoWay}"/>
+        </Grid>
+    </StackPanel>
+
+</UserControl>

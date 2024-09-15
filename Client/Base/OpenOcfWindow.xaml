@@ -1,0 +1,42 @@
+﻿<Window x:Class="OpenWLS.Client.Base.OpenOcfWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Open  File " Height="400" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition  Height="Auto" />
+                <RowDefinition  Height="Auto" />
+                <RowDefinition  Height="*" />
+                <RowDefinition  Height="Auto" />                
+            </Grid.RowDefinitions>
+            <Grid Name="opModeGd" Grid.Row="0" Height ="25" Margin="5">
+                <ComboBox Name="opModeCb" Width="74" SelectionChanged="opMode_SelectionChanged" HorizontalAlignment="Left" />
+                <ComboBox Name="ocfCb"  Width="74" SelectionChanged="ocf_SelectionChanged" HorizontalAlignment="Left" Margin="76,0,0,0" />
+            </Grid>
+            <Grid Name="globalGd" Grid.Row="1" Height="30">
+                <CheckBox x:Name="globalCb" Content="Global" HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top"
+                           Width="67" Checked="global_Checked" Unchecked="global_Checked" />
+            </Grid>
+            <Grid Grid.Row="3" >
+                <Label Content="Description" Height="25" VerticalAlignment="Top"></Label>
+                <TextBox Margin="2,25,2,25" TextWrapping="Wrap" x:Name="descTb" />
+                <Button Content="Cancel" Margin="2,150,2,2" Width="50" HorizontalAlignment="Left" 
+                        Click="Cancel_Click"/>    
+                <Button Content="Ok" Margin="2,150,2,2" Width="30" HorizontalAlignment="Right" 
+                        Click="Ok_Click"/>
+            
+            </Grid>
+        </Grid>
+        <ListBox x:Name="fileList" Grid.Column="1" Margin="0,5,5,5" SelectionChanged="file_SelectionChanged"
+                 MouseDoubleClick="fileList_MouseDoubleClick"/>
+
+
+
+
+    </Grid>
+</Window>

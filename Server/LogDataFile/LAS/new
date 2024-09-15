@@ -1,0 +1,40 @@
+Section
+"VERSION INFORMATION SECTION" 
+"WELL INFORMATION SECTION"
+"Parameter"
+"Log_Parameter"
+"Log_Data"
+"CURVE INFORMATION SECTION"
+"PARAMETER INFORMATION SECTION"
+"OTHER"
+"ASCII LOG DATA"
+"Core_Data"
+"Core_Definition"
+"Core_Parameter"
+"Drilling_Data"
+"Drilling_Definition"
+"Drilling_Parameter"
+"Tops_Data"
+"Tops_Definition"
+"Tops_Parameter"
+"Test_Data"
+"Test_Definition"
+"Test_Parameter"
+
+
+
+/*
+class Parameter
+{
+	public string MNEM{get; set;}
+	public string UNITS{get; set;}
+	public string DATA{get; set;}
+	public string DESCRIPTION{get; set;}
+	public string FORMAT{get; set;}
+	public string ASSOCIATION{get; set;}
+
+}
+
+
+DataType: Floating point, Integer, Exponential, String, Date, Time, Deg/min/sec
+}*/

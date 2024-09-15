@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="OpenWLS.Client.GView.GUI.MeasurementCntl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="300">
+    <Grid>
+        <Label Content="Measurement" HorizontalAlignment="Left" Margin="3,1,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="chCntl" HorizontalAlignment="Left" Margin="90,5,0,0" VerticalAlignment="Top" Width="79" 
+                Text="{Binding Name, Mode=TwoWay}" IsEditable="True" 
+                  />
+        <ComboBox x:Name="fileCntl" HorizontalAlignment="Left" Margin="176,5,0,0" VerticalAlignment="Top" Width="120"
+                   SelectedItem="{Binding DFile}" IsEditable="True" SelectionChanged="fileCntl_SelectionChanged"/>
+        <Label Content="Element" HorizontalAlignment="Left" Margin="30,31,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="92,34,0,0" TextWrapping="Wrap" Text="{Binding Element, Mode=TwoWay}" VerticalAlignment="Top" Width="47"/>
+    </Grid>
+</UserControl>

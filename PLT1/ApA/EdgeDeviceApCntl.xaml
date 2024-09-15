@@ -1,0 +1,18 @@
+﻿<gui_inst:EdgeDeviceCntl x:Class="OpenWLS.PLT1.ApA.EdgeDeviceApCntl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"       
+            xmlns:local="clr-namespace:OpenWLS.PLT1.ApA"  
+            xmlns:gui_inst="clr-namespace:OpenWLS.Client.LogInstance.Instrument;assembly=Client"  
+           xmlns:gui_base="clr-namespace:OpenWLS.Client.Base;assembly=Client"  
+             mc:Ignorable="d"     >
+
+            <Grid Margin="5" x:Name ="usbGrid" Height="23" >
+                <Button Name="usbBtn"  HorizontalAlignment="Left" Width="40"  BorderThickness="0" Background="White" Click="usbBtn_Click"  />
+                <ComboBox Name="assetsCb" HorizontalAlignment="Left" Width="60"
+                           Margin="50,0,0,0"></ComboBox>
+            </Grid>
+
+
+</gui_inst:EdgeDeviceCntl>

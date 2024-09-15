@@ -1,0 +1,114 @@
+﻿<UserControl x:Class="OpenWLS.Client.LogInstance.PanelsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OpenWLS.Client.LogInstance"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="400">
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions >
+
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" x:Name="edgeDevGd" />
+                <!--ComboBox Name="edgeDevCb" Grid.Row ="0" SelectionChanged="edgeDevCb_SelectionChanged" /-->
+                <DataGrid x:Name="subList"  Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" >
+                    <!--GridViewColumn Header="Tool" Width="80" DisplayMemberBinding="{Binding ToolName }"/-->
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Model" Width="50" Binding = "{Binding Model }" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Asset" Width="70" Binding = "{Binding Asset}" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+                    <DataGrid.GroupStyle>
+                        <GroupStyle >
+                            <GroupStyle.ContainerStyle>
+                                <Style TargetType="{x:Type GroupItem}">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate >
+                                                <Expander IsExpanded="True">
+                                                    <Expander.Header>
+                                                        <TextBlock  DataContext="{Binding Items}"  FontWeight="Bold" FontSize="16">
+                                                            <TextBlock.Text>
+                                                                <MultiBinding  StringFormat=" {0} : {1}">
+                                                                    <Binding Path="InstName"/>
+                                                                    <Binding Path="Address"/>
+                                                                </MultiBinding>
+                                                            </TextBlock.Text>
+                                                        </TextBlock>
+                                                    </Expander.Header>
+                                                    <ItemsPresenter />
+                                                </Expander>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </GroupStyle.ContainerStyle>
+                        </GroupStyle>
+                    </DataGrid.GroupStyle>
+                </DataGrid>
+            </Grid>
+   
+            <ListView Grid.Column="1" x:Name="subDbList" MouseDoubleClick="subDbList_MouseDoubleClick" >
+                <ListView.GroupStyle>
+                    <GroupStyle >
+                        <GroupStyle.ContainerStyle>
+                            <Style TargetType="{x:Type GroupItem}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate >
+                                            <Expander IsExpanded="True">
+                                                <Expander.Header>
+                                                    <TextBlock  Text="{Binding Name}"  FontWeight="Bold" FontSize="14"/>
+                                                </Expander.Header>
+                                                <ItemsPresenter />
+                                            </Expander>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </GroupStyle.ContainerStyle>
+                    </GroupStyle>
+                </ListView.GroupStyle>
+                <ListView.View>
+                    <GridView >
+                        <GridViewColumn Header="Model" Width="80" DisplayMemberBinding="{Binding Model }"/>
+                        <GridViewColumn Header="Description" Width="100" DisplayMemberBinding="{Binding Desc}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="2" x:Name="editBtnGrid" >
+
+            <Button  Background="Transparent"  BorderThickness="0"
+                Click="AddBtn_Click" ToolTip="Show/Hide master instrument list, for adding new instrument ">
+                <Image Source="..\..\Images\add.png" Height="30" Width="30"  ></Image>
+            </Button>
+
+            <Button  Background="Transparent"   BorderThickness="0"
+                Click="UpBtn_Click" ToolTip="move selected instrument up ">
+                <Image Source="..\..\Images\up.png" Height="30" Width="30"  ></Image>
+            </Button>
+            <Button  Background="Transparent"   BorderThickness="0"
+                Click="DownBtn_Click" ToolTip="move selected instrument down ">
+                <Image Source="..\..\Images\down.png" Height="30" Width="30"  ></Image>
+            </Button>
+
+            <Button  Background="Transparent"   BorderThickness="0"
+                Click="DelBtn_Click" ToolTip="click to delete selected instrument ">
+                <Image Source="..\..\Images\delete.png" Height="30" Width="30"  ></Image>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

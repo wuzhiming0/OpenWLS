@@ -1,0 +1,20 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             x:Class="OpenWLS.Client.LogInstance.Calibration.CVTaskBar" 
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="75" />            
+        </Grid.ColumnDefinitions>
+
+        <ComboBox x:Name="taskCb" Grid.Column="0" Foreground="DarkBlue"  FontSize="14" FontWeight="Bold" SelectionChanged="taskCb_SelectionChanged" />
+        <ProgressBar x:Name="taskPb" Grid.Column="1"/>
+        <Button x:Name="taskBtn"  Grid.Column="2" Foreground="DarkBlue" FontSize="14" FontWeight="Bold"  Click="taskBtn_Click"/>
+    </Grid>
+</UserControl>

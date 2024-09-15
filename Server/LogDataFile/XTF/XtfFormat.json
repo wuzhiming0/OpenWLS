@@ -1,0 +1,1249 @@
+﻿[
+      {
+         "Name": "XTFFHRecord1",
+         "LittleEndian": "false",
+         "Location": "0",
+         "Length": "4096",
+         "Description": "General",
+         "Items": [
+            {
+               "Name": "INITS",
+               "Location": "0",
+               "DataType": "short",
+               "Count": "8"
+            },
+            {
+               "Name": "CHTYPE",
+               "Location": "760",
+               "DataType": "string",
+               "Count": "4"
+            },
+            {
+               "Name": "CHNAME",
+               "Location": "764",
+               "DataType": "string",
+               "Count": "80"
+            },
+            {
+               "Name": "CHUNIT",
+               "Location": "844",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CH8VER",
+               "Location": "852",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "NUMSYS",
+               "Location": "948",
+               "DataType": "byte"
+            },
+            {
+               "Name": "QC",
+               "Location": "949",
+               "DataType": "byte"
+            },
+            {
+               "Name": "Marjor Rev",
+               "Location": "950",
+               "DataType": "byte"
+            },
+            {
+               "Name": "Minor Rev",
+               "Location": "951",
+               "DataType": "byte"
+            },
+            {
+               "Name": "ISNUMCV",
+               "Location": "996",
+               "DataType": "int"
+            },
+            {
+               "Name": "ISMAXCV",
+               "Location": "1000",
+               "DataType": "int"
+            },
+            {
+               "Name": "dataTypes",
+               "Location": "1024",
+               "DataType": "byte",
+               "Count": "1024"
+            },
+            {
+               "Name": "SURVTOP",
+               "Location": "2048",
+               "DataType": "single"
+            },
+            {
+               "Name": "SURVBOT",
+               "Location": "2052",
+               "DataType": "single"
+            },
+            {
+               "Name": "SURVLEV",
+               "Location": "2056",
+               "DataType": "single"
+            },
+            {
+               "Name": "I4BYTES",
+               "Location": "4092",
+               "DataType": "int"
+            }
+         ]
+      },
+      {
+         "Name": "XTFFHRecord8",
+         "LittleEndian": "false",
+         "Location": "28672",
+         "Length": "4096",
+         "Description": "Wellsite Attributes",
+         "Items": [
+            {
+               "Name": "CH8WSIG",
+               "Location": "0",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CH80WELL",
+               "Location": "8",
+               "DataType": "string",
+               "Count": "80"
+            },
+            {
+               "Name": "CH80FLD",
+               "Location": "88",
+               "DataType": "string",
+               "Count": "80"
+            },
+            {
+               "Name": "CH80COMP",
+               "Location": "168",
+               "DataType": "string",
+               "Count": "80"
+            },
+            {
+               "Name": "CH32CTRY",
+               "Location": "248",
+               "DataType": "string",
+               "Count": "32"
+            },
+            {
+               "Name": "CH32COUN",
+               "Location": "280",
+               "DataType": "string",
+               "Count": "32"
+            },
+            {
+               "Name": "CH16STAT",
+               "Location": "312",
+               "DataType": "string",
+               "Count": "16"
+            },
+            {
+               "Name": "CH8OCT",
+               "Location": "328",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CH40WLOC",
+               "Location": "336",
+               "DataType": "string",
+               "Count": "40"
+            },
+            {
+               "Name": "CH4SECT",
+               "Location": "376",
+               "DataType": "string",
+               "Count": "4"
+            },
+            {
+               "Name": "CH4TWNSP",
+               "Location": "380",
+               "DataType": "string",
+               "Count": "4"
+            },
+            {
+               "Name": "CH4RGN",
+               "Location": "384",
+               "DataType": "string",
+               "Count": "4"
+            },
+            {
+               "Name": "CH2IPD",
+               "Location": "388",
+               "DataType": "string",
+               "Count": "2"
+            },
+            {
+               "Name": "CH2IDM",
+               "Location": "390",
+               "DataType": "string",
+               "Count": "2"
+            },
+            {
+               "Name": "CH4LAC",
+               "Location": "392",
+               "DataType": "string",
+               "Count": "4"
+            },
+            {
+               "Name": "CH8WSU",
+               "Location": "396",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CH20API",
+               "Location": "404",
+               "DataType": "string",
+               "Count": "20"
+            },
+            {
+               "Name": "CH20UWI",
+               "Location": "424",
+               "DataType": "string",
+               "Count": "20"
+            },
+            {
+               "Name": "WSLAT",
+               "Location": "1024",
+               "DataType": "single"
+            },
+            {
+               "Name": "WSLONG",
+               "Location": "1028",
+               "DataType": "single"
+            },
+            {
+               "Name": "ELEVKB",
+               "Location": "1032",
+               "DataType": "single"
+            },
+            {
+               "Name": "DRKFLR",
+               "Location": "1036",
+               "DataType": "single"
+            },
+            {
+               "Name": "ELEVSL",
+               "Location": "1040",
+               "DataType": "single"
+            },
+            {
+               "Name": "DECMAG",
+               "Location": "1044",
+               "DataType": "single"
+            },
+            {
+               "Name": "ECCNUM",
+               "Location": "1048",
+               "DataType": "single"
+            },
+            {
+               "Name": "GRNSEA",
+               "Location": "1052",
+               "DataType": "single"
+            },
+            {
+               "Name": "INCMAG",
+               "Location": "1056",
+               "DataType": "single"
+            },
+            {
+               "Name": "I2MFG",
+               "Location": "2560",
+               "DataType": "short"
+            },
+            {
+               "Name": "I2MAXV",
+               "Location": "2562",
+               "DataType": "short"
+            }
+         ]
+      },
+      {
+         "Name": "XTFCurveHeader",
+         "LittleEndian": "false",
+         "Length": "4096",
+         "Items": [
+            {
+               "Name": "CHCURV",
+               "Location": "0",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHUNITS",
+               "Location": "8",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHCRVCMT",
+               "Location": "16",
+               "DataType": "string",
+               "Count": "24"
+            },
+            {
+               "Name": "CHSERVCO",
+               "Location": "40",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHTOOLTY",
+               "Location": "48",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHCURVTY",
+               "Location": "56",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHDEPUNT",
+               "Location": "64",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHTIMING",
+               "Location": "72",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHSTIMUN",
+               "Location": "80",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHTAPHED",
+               "Location": "88",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHSTADEP",
+               "Location": "96",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHCPUNTS",
+               "Location": "104",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "CHBOMNEM",
+               "Location": "112",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "DIRECTON",
+               "Location": "120",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "AIFCNAM",
+               "Location": "128",
+               "DataType": "string",
+               "Count": "24"
+            },
+            {
+               "Name": "OCTNAM",
+               "Location": "152",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "TOOLNAM",
+               "Location": "160",
+               "DataType": "string",
+               "Count": "48"
+            },
+            {
+               "Name": "IDXUNIT2",
+               "Location": "208",
+               "DataType": "string",
+               "Count": "8"
+            },
+            {
+               "Name": "LISNAME",
+               "Location": "224",
+               "DataType": "string",
+               "Count": "4"
+            },
+            {
+               "Name": "CREATEOR",
+               "Location": "232",
+               "DataType": "string",
+               "Count": "16"
+            },
+            {
+               "Name": "WRITER",
+               "Location": "248",
+               "DataType": "string",
+               "Count": "16"
+            },
+            {
+               "Name": "RUN",
+               "Location": "264",
+               "DataType": "string",
+               "Count": "4"
+            },
+            {
+               "Name": "TRIP",
+               "Location": "268",
+               "DataType": "string",
+               "Count": "4"
+            },
+            {
+               "Name": "MODOCT",
+               "Location": "272",
+               "DataType": "string",
+               "Count": "20"
+            },
+            {
+               "Name": "LONGNAME",
+               "Location": "292",
+               "DataType": "string",
+               "Count": "128"
+            },
+            {
+               "Name": "CURVDESC",
+               "Location": "420",
+               "DataType": "string",
+               "Count": "48"
+            },
+            {
+               "Name": "LONGUNIT",
+               "Location": "468",
+               "DataType": "string",
+               "Count": "20"
+            },
+            {
+               "Name": "DEPTOP",
+               "Location": "1024",
+               "DataType": "single"
+            },
+            {
+               "Name": "DEPBOT",
+               "Location": "1028",
+               "DataType": "single"
+            },
+            {
+               "Name": "RLEVCV",
+               "Location": "1032",
+               "DataType": "single"
+            },
+            {
+               "Name": "CURVMIN",
+               "Location": "1036",
+               "DataType": "single"
+            },
+            {
+               "Name": "CURVMAX",
+               "Location": "1040",
+               "DataType": "single"
+            },
+            {
+               "Name": "CURVAVG",
+               "Location": "1044",
+               "DataType": "single"
+            },
+            {
+               "Name": "TIMEING",
+               "Location": "1048",
+               "DataType": "single"
+            },
+            {
+               "Name": "STARTIM",
+               "Location": "1052",
+               "DataType": "single"
+            },
+            {
+               "Name": "STADEPTH",
+               "Location": "1056",
+               "DataType": "single"
+            },
+            {
+               "Name": "STDDEV",
+               "Location": "1060",
+               "DataType": "single"
+            },
+            {
+               "Name": "CPWINBEG",
+               "Location": "1064",
+               "DataType": "single"
+            },
+            {
+               "Name": "CPWINSTP",
+               "Location": "1068",
+               "DataType": "single"
+            },
+            {
+               "Name": "CPWINLEN",
+               "Location": "1072",
+               "DataType": "single"
+            },
+            {
+               "Name": "CBILODEG",
+               "Location": "1076",
+               "DataType": "single"
+            },
+            {
+               "Name": "TRAN2REC",
+               "Location": "1080",
+               "DataType": "single"
+            },
+            {
+               "Name": "REC2REC",
+               "Location": "1084",
+               "DataType": "single"
+            },
+            {
+               "Name": "DEPOFF",
+               "Location": "1088",
+               "DataType": "single"
+            },
+            {
+               "Name": "DATADLAY",
+               "Location": "1092",
+               "DataType": "single"
+            },
+            {
+               "Name": "BUTANGL",
+               "Location": "1096",
+               "DataType": "single"
+            },
+            {
+               "Name": "BUTXLOC",
+               "Location": "1100",
+               "DataType": "single"
+            },
+            {
+               "Name": "BUTYLOC",
+               "Location": "1104",
+               "DataType": "single"
+            },
+            {
+               "Name": "SMVALSFL",
+               "Location": "1108",
+               "DataType": "single"
+            },
+            {
+               "Name": "DBLINIT",
+               "Location": "1536",
+               "DataType": "double"
+            },
+            {
+               "Name": "DBTOPDEP",
+               "Location": "1544",
+               "DataType": "double"
+            },
+            {
+               "Name": "DBBOTDEP",
+               "Location": "1552",
+               "DataType": "double"
+            },
+            {
+               "Name": "DBRLEVEL",
+               "Location": "1560",
+               "DataType": "double"
+            },
+            {
+               "Name": "SMVALSDB",
+               "Location": "1568",
+               "DataType": "double",
+               "Count": "6"
+            },
+            {
+               "Name": "IDXTOP2",
+               "Location": "1616",
+               "DataType": "double"
+            },
+            {
+               "Name": "IDXBOT2",
+               "Location": "1624",
+               "DataType": "double"
+            },
+            {
+               "Name": "IDXRLEV2",
+               "Location": "1632",
+               "DataType": "double"
+            },
+            {
+               "Name": "IECDATE",
+               "Location": "2048",
+               "DataType": "int"
+            },
+            {
+               "Name": "IECTIME",
+               "Location": "2052",
+               "DataType": "int"
+            },
+            {
+               "Name": "IEADATE",
+               "Location": "2056",
+               "DataType": "int"
+            },
+            {
+               "Name": "IEATIME",
+               "Location": "2060",
+               "DataType": "int"
+            },
+            {
+               "Name": "NCRVHDR",
+               "Location": "2064",
+               "DataType": "int"
+            },
+            {
+               "Name": "LASTREC",
+               "Location": "2068",
+               "DataType": "int"
+            },
+            {
+               "Name": "I4INIT",
+               "Location": "2072",
+               "DataType": "int"
+            },
+            {
+               "Name": "R4INIT",
+               "Location": "2072",
+               "DataType": "single"
+            },
+            {
+               "Name": "NLEVLS",
+               "Location": "2076",
+               "DataType": "int"
+            },
+            {
+               "Name": "IESDATE",
+               "Location": "2080",
+               "DataType": "int"
+            },
+            {
+               "Name": "IESTIME",
+               "Location": "2084",
+               "DataType": "int"
+            },
+            {
+               "Name": "SMVALSI4",
+               "Location": "2088",
+               "DataType": "int",
+               "Count": "6"
+            },
+            {
+               "Name": "STRUCRCS",
+               "Location": "2112",
+               "DataType": "int",
+               "Count": "2"
+            },
+            {
+               "Name": "ANNOTRCS",
+               "Location": "2120",
+               "DataType": "int",
+               "Count": "2"
+            },
+            {
+               "Name": "EXHDSIG",
+               "Location": "2128",
+               "DataType": "int"
+            },
+            {
+               "Name": "EXHDINDX",
+               "Location": "2132",
+               "DataType": "int",
+               "Count": "2"
+            },
+            {
+               "Name": "COMPSTRT",
+               "Location": "2140",
+               "DataType": "int"
+            },
+            {
+               "Name": "COMPEND",
+               "Location": "2144",
+               "DataType": "int"
+            },
+            {
+               "Name": "COELECNT",
+               "Location": "2148",
+               "DataType": "int"
+            },
+            {
+               "Name": "COELESIZ",
+               "Location": "2152",
+               "DataType": "int"
+            },
+            {
+               "Name": "COMPDSIZ",
+               "Location": "2156",
+               "DataType": "int"
+            },
+            {
+               "Name": "IMAJOR",
+               "Location": "2560",
+               "DataType": "short"
+            },
+            {
+               "Name": "IMINOR",
+               "Location": "2562",
+               "DataType": "short"
+            },
+            {
+               "Name": "IHCURV",
+               "Location": "2564",
+               "DataType": "short"
+            },
+            {
+               "Name": "ICTYPE",
+               "Location": "2566",
+               "DataType": "short"
+            },
+            {
+               "Name": "IDTYPE",
+               "Location": "2568",
+               "DataType": "short"
+            },
+            {
+               "Name": "IVTYPE",
+               "Location": "2570",
+               "DataType": "short"
+            },
+            {
+               "Name": "IHTYPE",
+               "Location": "2572",
+               "DataType": "short"
+            },
+            {
+               "Name": "NDIMS",
+               "Location": "2574",
+               "DataType": "short"
+            },
+            {
+               "Name": "IDIMS1",
+               "Location": "2576",
+               "DataType": "short"
+            },
+            {
+               "Name": "IDIMS2",
+               "Location": "2578",
+               "DataType": "short"
+            },
+            {
+               "Name": "IDIMS3",
+               "Location": "2580",
+               "DataType": "short"
+            },
+            {
+               "Name": "IDIMS4",
+               "Location": "2582",
+               "DataType": "short"
+            },
+            {
+               "Name": "IDIMS5",
+               "Location": "2584",
+               "DataType": "short"
+            },
+            {
+               "Name": "IDIMS6",
+               "Location": "2586",
+               "DataType": "short"
+            },
+            {
+               "Name": "IDIMS7",
+               "Location": "2588",
+               "DataType": "short"
+            },
+            {
+               "Name": "I2INIT",
+               "Location": "2590",
+               "DataType": "short"
+            },
+            {
+               "Name": "INTFLFIX",
+               "Location": "2592",
+               "DataType": "short"
+            },
+            {
+               "Name": "ISIGN",
+               "Location": "2594",
+               "DataType": "short"
+            },
+            {
+               "Name": "NUMBITS",
+               "Location": "2596",
+               "DataType": "short"
+            },
+            {
+               "Name": "LISREPCD",
+               "Location": "2598",
+               "DataType": "short"
+            },
+            {
+               "Name": "LISNSAMP",
+               "Location": "2600",
+               "DataType": "short"
+            },
+            {
+               "Name": "LISRCSIZ",
+               "Location": "2602",
+               "DataType": "short"
+            },
+            {
+               "Name": "LISNSIZE",
+               "Location": "2604",
+               "DataType": "short"
+            },
+            {
+               "Name": "ISTARTFV",
+               "Location": "2606",
+               "DataType": "short"
+            },
+            {
+               "Name": "IGAINFV",
+               "Location": "2608",
+               "DataType": "short"
+            },
+            {
+               "Name": "IGAINEPX",
+               "Location": "2610",
+               "DataType": "short"
+            },
+            {
+               "Name": "IGAINMTH",
+               "Location": "2612",
+               "DataType": "short"
+            },
+            {
+               "Name": "IGANAPP",
+               "Location": "2614",
+               "DataType": "short"
+            },
+            {
+               "Name": "LNTAPHED",
+               "Location": "2616",
+               "DataType": "short"
+            },
+            {
+               "Name": "NTOOLS",
+               "Location": "2618",
+               "DataType": "short"
+            },
+            {
+               "Name": "IDXINGRP",
+               "Location": "2620",
+               "DataType": "short"
+            },
+            {
+               "Name": "SMVALS12",
+               "Location": "2622",
+               "DataType": "short",
+               "Count": "6"
+            },
+            {
+               "Name": "INVERTED",
+               "Location": "2634",
+               "DataType": "short"
+            },
+            {
+               "Name": "SEQUENCE",
+               "Location": "2636",
+               "DataType": "short"
+            },
+            {
+               "Name": "TRANIDS",
+               "Location": "3072",
+               "DataType": "byte",
+               "Count": "24"
+            },
+            {
+               "Name": "RECVIDS",
+               "Location": "3096",
+               "DataType": "byte",
+               "Count": "24"
+            },
+            {
+               "Name": "RAWTPHD",
+               "Location": "3120",
+               "DataType": "byte",
+               "Count": "276"
+            },
+            {
+               "Name": "SMVCODES",
+               "Location": "3396",
+               "DataType": "byte",
+               "Count": "6"
+            },
+            {
+               "Name": "SMVALSBY",
+               "Location": "3402",
+               "DataType": "byte",
+               "Count": "6"
+            },
+            {
+               "Name": "PROCFLGS",
+               "Location": "3408",
+               "DataType": "byte",
+               "Count": "8"
+            },
+            {
+               "Name": "SYSCODE",
+               "Location": "4095",
+               "DataType": "byte"
+            }
+         ]
+      },
+      {
+         "Name": "XTFServiceHeader",
+         "LittleEndian": "false",
+         "Length": "1024",
+         "Items": [
+            {
+               "Name": "ISERV",
+               "Location": "0",
+               "DataType": "short",
+               "Count": "2"
+            },
+            {
+               "Name": "ISVCD",
+               "Location": "4",
+               "DataType": "short",
+               "Count": "3"
+            },
+            {
+               "Name": "IRUN",
+               "Location": "10",
+               "DataType": "short"
+            },
+            {
+               "Name": "IDATE",
+               "Location": "12",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ISON",
+               "Location": "20",
+               "DataType": "short"
+            },
+            {
+               "Name": "ILDP",
+               "Location": "26",
+               "DataType": "short"
+            },
+            {
+               "Name": "DP",
+               "Location": "28",
+               "DataType": "float"
+            },
+            {
+               "Name": "DL",
+               "Location": "32",
+               "DataType": "float"
+            },
+            {
+               "Name": "BLD",
+               "Location": "36",
+               "DataType": "float"
+            },
+            {
+               "Name": "TLD",
+               "Location": "40",
+               "DataType": "float"
+            },
+            {
+               "Name": "CSZD",
+               "Location": "44",
+               "DataType": "float"
+            },
+            {
+               "Name": "CSZDD",
+               "Location": "48",
+               "DataType": "float"
+            },
+            {
+               "Name": "CSZLD",
+               "Location": "52",
+               "DataType": "float"
+            },
+            {
+               "Name": "BITS",
+               "Location": "56",
+               "DataType": "float"
+            },
+            {
+               "Name": "IFLDT",
+               "Location": "60",
+               "DataType": "short",
+               "Count": "6"
+            },
+            {
+               "Name": "FDN",
+               "Location": "72",
+               "DataType": "float"
+            },
+            {
+               "Name": "IFDNU",
+               "Location": "76",
+               "DataType": "short",
+               "Count": "2"
+            },
+            {
+               "Name": "FV",
+               "Location": "80",
+               "DataType": "float"
+            },
+            {
+               "Name": "PH",
+               "Location": "84",
+               "DataType": "float"
+            },
+            {
+               "Name": "FLOSS",
+               "Location": "88",
+               "DataType": "float"
+            },
+            {
+               "Name": "ISAMS",
+               "Location": "92",
+               "DataType": "short",
+               "Count": "2"
+            },
+            {
+               "Name": "RMTMP1",
+               "Location": "96",
+               "DataType": "float"
+            },
+            {
+               "Name": "RMTMP2",
+               "Location": "100",
+               "DataType": "float"
+            },
+            {
+               "Name": "RMFTMP1",
+               "Location": "104",
+               "DataType": "float"
+            },
+            {
+               "Name": "RMFTMP2",
+               "Location": "108",
+               "DataType": "float"
+            },
+            {
+               "Name": "RMCTMP1",
+               "Location": "112",
+               "DataType": "float"
+            },
+            {
+               "Name": "RMCTMP2",
+               "Location": "116",
+               "DataType": "float"
+            },
+            {
+               "Name": "IRMFS",
+               "Location": "120",
+               "DataType": "short",
+               "Count": "2"
+            },
+            {
+               "Name": "IRMCS",
+               "Location": "124",
+               "DataType": "short",
+               "Count": "2"
+            },
+            {
+               "Name": "RMBHT",
+               "Location": "128",
+               "DataType": "float"
+            },
+            {
+               "Name": "BHT",
+               "Location": "132",
+               "DataType": "float"
+            },
+            {
+               "Name": "TMAX",
+               "Location": "136",
+               "DataType": "float"
+            },
+            {
+               "Name": "TIMEC",
+               "Location": "140",
+               "DataType": "float"
+            },
+            {
+               "Name": "IEQP",
+               "Location": "144",
+               "DataType": "short",
+               "Count": "2"
+            },
+            {
+               "Name": "IELOC",
+               "Location": "148",
+               "DataType": "short",
+               "Count": "2"
+            },
+            {
+               "Name": "TDEPS",
+               "Location": "152",
+               "DataType": "float"
+            },
+            {
+               "Name": "BDEPS",
+               "Location": "156",
+               "DataType": "float"
+            },
+            {
+               "Name": "ITS1",
+               "Location": "160",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITS2",
+               "Location": "168",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITS3",
+               "Location": "176",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITS4",
+               "Location": "184",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITS5",
+               "Location": "192",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITS6",
+               "Location": "200",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITS7",
+               "Location": "208",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITS8",
+               "Location": "216",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITS9",
+               "Location": "224",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITSA",
+               "Location": "232",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITSB",
+               "Location": "240",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "ITSC",
+               "Location": "248",
+               "DataType": "short",
+               "Count": "4"
+            },
+            {
+               "Name": "TLN",
+               "Location": "256",
+               "DataType": "float"
+            },
+            {
+               "Name": "ICVNM",
+               "Location": "260",
+               "DataType": "short",
+               "Count": "100"
+            },
+            {
+               "Name": "ITRK",
+               "Location": "460",
+               "DataType": "short",
+               "Count": "50"
+            },
+            {
+               "Name": "SCLL",
+               "Location": "560",
+               "DataType": "float",
+               "Count": "25"
+            },
+            {
+               "Name": "SCLR",
+               "Location": "660",
+               "DataType": "float",
+               "Count": "25"
+            },
+            {
+               "Name": "CHDEP",
+               "Location": "760",
+               "DataType": "float",
+               "Count": "25"
+            },
+            {
+               "Name": "IGRID",
+               "Location": "860",
+               "DataType": "short",
+               "Count": "2"
+            },
+            {
+               "Name": "IENG",
+               "Location": "864",
+               "DataType": "string",
+               "Count": "20"
+            },
+            {
+               "Name": "IWITN",
+               "Location": "884",
+               "DataType": "string",
+               "Count": "20"
+            },
+            {
+               "Name": "ICOMH",
+               "Location": "904",
+               "DataType": "string",
+               "Count": "80"
+            },
+            {
+               "Name": "FILB",
+               "Location": "984",
+               "DataType": "float",
+               "Count": "10"
+            }
+         ]
+      }
+   ]

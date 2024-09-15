@@ -1,0 +1,24 @@
+LogDataFile
+    Measurment ( DLIS:Channel | XTF,LAS:Curve )
+        Head
+            Head1: not frequently changed properites.
+            Head2: frequently changed properites. 
+        MVBlock: Value Block: Value block informatiom without values
+        BinRecord : All the binary blob record, including measurement values    
+
+    NMRecord: Not Measurment Record
+        BinRecord
+
+
+
+      MVReadBI 
+    |    |      |   
+    |    |  ReadIndex  
+    |    |   / 
+    |  Index  
+    |    /
+MVReader
+    |
+SampleBuffer
+    |
+Measurment      

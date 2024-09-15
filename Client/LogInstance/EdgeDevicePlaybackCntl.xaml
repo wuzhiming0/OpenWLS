@@ -1,0 +1,32 @@
+﻿<gui_inst:EdgeDeviceCntl x:Class="OpenWLS.Client.LogInstance.EdgeDevicePlaybackCntl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"       
+            xmlns:gui_inst="clr-namespace:OpenWLS.Client.LogInstance.Instrument"  
+           xmlns:gui_base="clr-namespace:OpenWLS.Client.Base"  
+             mc:Ignorable="d"     >
+
+    <StackPanel Orientation="Vertical">
+        <Grid Height="23" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Speed"  Grid.Column="0"/>
+            <gui_base:ScaleBarWithInput x:Name="speedBar" Value="50" Grid.Column="1" Margin="2" ValueChanged ="tbTxEqu_ValueChanged"/>
+        </Grid>
+        <Grid Height="30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Data File" Height="30" Grid.Column="0"/>
+            <TextBlock x:Name="dfileTb" Height="30"  Grid.Column="1" />
+            <Button Content=" ... " x:Name="dfBtn" Height="23"  Grid.Column="2" Click="dfBtn_Click" />            
+        </Grid>
+    </StackPanel>
+
+
+</gui_inst:EdgeDeviceCntl>

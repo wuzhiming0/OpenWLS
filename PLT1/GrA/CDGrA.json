@@ -1,0 +1,189 @@
+ [
+  {
+    "Name": "GR",
+    "Phase": [
+      {
+        "Name": "CP",
+        "Matrixes": 0,
+        "StdData": [
+          {
+            "Name": "gr_slow",
+            "Unit": "cts/s",
+            "Value": 109.866669
+          },
+          {
+            "Name": "gr_shigh",
+            "Unit": "cts/s",
+            "Value": 1038.6
+          },
+          {
+            "Name": "gr_diff",
+            "Min": 870,
+            "Max": 960,
+            "Value": 928.7333
+          },
+          {
+            "Name": "gr_mult",
+            "Unit": "gAPI/(cts/s)",
+            "Value": 0.1615103
+          },
+          {
+            "Name": "gr_add",
+            "Unit": "gAPI",
+            "Value": 0
+          },
+          {
+            "Name": "gr_elow",
+            "Unit": "gAPI",
+            "Value": 17.7445984
+          },
+          {
+            "Name": "gr_ehigh",
+            "Unit": "gAPI",
+            "Value": 167.7446
+          },
+          {
+            "Name": "gr_calb",
+            "Unit": "gAPI",
+            "Value": 150
+          }
+        ]
+      },
+      {
+        "Name": "VP",
+        "Matrixes": 0,
+        "StdData": [
+          {
+            "Name": "gr_slow",
+            "Unit": "cts/s",
+            "Value": 107.555557
+          },
+          {
+            "Name": "gr_shigh",
+            "Unit": "cts/s",
+            "Value": 1012.55554
+          },
+          {
+            "Name": "gr_mult",
+            "Unit": "gAPI/(cts/s)",
+            "Value": 0.1615103
+          },
+          {
+            "Name": "gr_add",
+            "Unit": "gAPI",
+            "Min": 0,
+            "Max": 0,
+            "Value": 0
+          },
+          {
+            "Name": "gr_elow",
+            "Unit": "gAPI",
+            "Value": 17.37133
+          },
+          {
+            "Name": "gr_ehigh",
+            "Unit": "gAPI",
+            "Value": 163.538162
+          },
+          {
+            "Name": "gr_diff",
+            "Unit": "gAPI",
+            "Min": 140,
+            "Max": 160,
+            "Value": 146.16684
+          }
+        ]
+      },
+      {
+        "Name": "VB",
+        "Matrixes": 0,
+        "StdData": [
+          {
+            "Name": "gr_slow",
+            "Unit": "cts/s",
+            "Value": 1169.6
+          },
+          {
+            "Name": "gr_shigh",
+            "Unit": "cts/s",
+            "Value": 2080.2666
+          },
+          {
+            "Name": "gr_mult",
+            "Unit": "gAPI/(cts/s)",
+            "Value": 0.159401119
+          },
+          {
+            "Name": "gr_add",
+            "Unit": "gAPI",
+            "Min": 0,
+            "Max": 0,
+            "Value": 0
+          },
+          {
+            "Name": "gr_elow",
+            "Unit": "gAPI",
+            "Value": 186.435532
+          },
+          {
+            "Name": "gr_ehigh",
+            "Unit": "gAPI",
+            "Value": 331.5968
+          },
+          {
+            "Name": "gr_diff",
+            "Unit": "gAPI",
+            "Min": 139.319885,
+            "Max": 159.319885,
+            "Value": 145.16127
+          }
+        ]
+      },
+      {
+        "Name": "VA",
+        "Matrixes": 0,
+        "StdData": [
+          {
+            "Name": "gr_slow",
+            "Unit": "cts/s",
+            "Value": 327.533325
+          },
+          {
+            "Name": "gr_shigh",
+            "Unit": "cts/s",
+            "Value": 1271.44446
+          },
+          {
+            "Name": "gr_mult",
+            "Unit": "gAPI/(cts/s)",
+            "Value": 0.159401119
+          },
+          {
+            "Name": "gr_add",
+            "Unit": "gAPI",
+            "Min": 0,
+            "Max": 0,
+            "Value": 0
+          },
+          {
+            "Name": "gr_elow",
+            "Unit": "gAPI",
+            "Value": 52.20918
+          },
+          {
+            "Name": "gr_ehigh",
+            "Unit": "gAPI",
+            "Value": 202.669617
+          },
+          {
+            "Name": "gr_diff",
+            "Unit": "gAPI",
+            "Min": 135.16127,
+            "Max": 155.16127,
+            "Value": 150.460434
+          }
+        ]
+      }
+    ]
+  }
+]

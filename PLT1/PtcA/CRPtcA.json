@@ -1,0 +1,95 @@
+ [
+	{
+         "Name": "GR",
+         "Phases": "CP",
+         "Tables": [{
+            "Name": "GR",
+            "Rows": "GR,gr_slow,gr_shigh,gr_diff,gr_mult,gr_elow,gr_ehigh,gr_calb",
+            "Columns": [
+               {
+                  "Text": null,
+                  "Width": 0.8
+               },
+               {
+                  "Text": "Background",
+                  "Unit": "cts/s",
+                  "Width": 1
+               },
+               {
+                  "Text": "Calibrator On",
+                  "Unit": "cts/s",
+                  "Width": 1
+               },
+               {
+                  "Text": "GR Diff",
+                  "Width": 1
+               },
+               {
+                  "Text": "Multiplier",
+                  "Width": 1
+               },
+               {
+                  "Text": "Background",
+                  "Unit": "gAPI",
+                  "Width": 1
+               },
+               {
+                  "Text": "Calibrator On",
+                  "Unit": "gAPI",
+                  "Width": 1
+               },
+               {
+                  "Text": "Calibrator Value",
+                  "Unit": "gAPI",
+                  "Width": 1.1
+               }
+            ]
+         }
+      ]},
+      {
+         "Name": "GR",
+         "Phases": "VP,VB,VA",
+         "Tables":[ {
+            "Name": "GR",
+            "Rows": "GR,gr_slow,gr_shigh,gr_mult,gr_elow,gr_ehigh,gr_diff",
+            "Columns": [
+               {
+                  "Text": null,
+                  "Width": 0.8
+               },
+               {
+                  "Text": "Background",
+                  "Unit": "cts/s",
+                  "Width": 1
+               },
+               {
+                  "Text": "Calibrator On",
+                  "Unit": "cts/s",
+                  "Width": 1
+               },
+               {
+                  "Text": "Multiplier",
+                  "Width": 1
+               },
+               {
+                  "Text": "Background",
+                  "Unit": "gAPI",
+                  "Width": 1
+               },
+               {
+                  "Text": "Calibrator On",
+                  "Unit": "gAPI",
+                  "Width": 1
+               },
+               {
+                  "Text": "GR Difference",
+                  "Unit": "gAPI",
+                  "Width": 1
+               }
+            ]
+         }
+      ]} 
+]
+
+	  
+   

@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="OpenWLS.Client.GView.GUI.TrackCntl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="180" Width="430" >
+    <Grid >
+        <CheckBox HorizontalAlignment="Left" Height="19" Margin="95,105,0,0" x:Name="sbCb" Click="sbCb_Click"
+                  Content="ScrollBar" IsChecked="{Binding InScrollbar, Mode=TwoWay}" VerticalAlignment="Top" Width="76"/>
+        <CheckBox Content="Linear"   HorizontalAlignment="Left" Margin="95,40,0,0" VerticalAlignment="Top" x:Name="linearCb"
+                  IsChecked="{Binding Linear, Mode=TwoWay}" Click="linearCb_Click"/>
+        <Label Content="Grids" HorizontalAlignment="Left" Margin="206,5,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="248,5,0,0" TextWrapping="Wrap" Text="{Binding Grids, Mode=TwoWay}" VerticalAlignment="Top" Width="95"/>
+        <Grid x:Name="logStartGd" Visibility="{Binding LogStartVisibility}">
+            <Label Content="LogStart" HorizontalAlignment="Left" Margin="189,34,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.105,0.654"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="248,35,0,0" TextWrapping="Wrap" Text="{Binding LogStart, Mode=TwoWay}" VerticalAlignment="Top" Width="95"/>
+        </Grid>
+        <Label Content="Width" HorizontalAlignment="Left" Margin="13,5,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="95,6,0,0" TextWrapping="Wrap" Text="{Binding Width, Mode=TwoWay}" VerticalAlignment="Top" Width="95"/>
+        <Label Content="Show Index" HorizontalAlignment="Left" Margin="13,64,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Height="24" Margin="95,67,0,0" x:Name="dtCb" SelectionChanged="dtCb_SelectionChanged"
+                   SelectedIndex="{Binding ShowIndex1, Mode=TwoWay}" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.968,0.444"/>
+        <Border Visibility="{Binding DtVisibility}" Margin="195,66,-195,0" 
+                VerticalAlignment="Top" BorderThickness="1" x:Name="dtGrid" BorderBrush="Gray" >
+            <Grid Margin="-9,0,9,0"  Height="25"  >
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="19,4,0,-3"
+                  Content="Year" IsChecked="{Binding ShowYear, Mode=TwoWay}" VerticalAlignment="Top" Width="46"/>
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="65,5,0,-4"
+                  Content="Month" IsChecked="{Binding ShowMonth, Mode=TwoWay}" VerticalAlignment="Top" Width="58"/>
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="123,5,0,-4"
+                  Content="Week" IsChecked="{Binding ShowWeek, Mode=TwoWay}" VerticalAlignment="Top" Width="51" />
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="179,5,0,-4"
+                  Content="Day" IsChecked="{Binding ShowDay, Mode=TwoWay}" VerticalAlignment="Top" Width="46"/>
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="227,5,0,-4"
+                  Content="Hour" IsChecked="{Binding ShowHour, Mode=TwoWay}" VerticalAlignment="Top" Width="46"/>
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="279,5,0,-4"
+                  Content="Minute" IsChecked="{Binding ShowMinute, Mode=TwoWay}" VerticalAlignment="Top" Width="63"/>
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="342,5,0,-4"
+                  Content="Second" IsChecked="{Binding ShowSecond, Mode=TwoWay}" VerticalAlignment="Top" Width="70" />
+            </Grid>
+        </Border>
+        <Border Margin="195,99,-195,0" VerticalAlignment="Top" BorderThickness="1" Visibility="{Binding DtSbVisibility}" x:Name="dtGrid1" BorderBrush="Gray" >
+            <Grid  Height="25" Margin="-85,0,85,0" >
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="97,5,0,-4"
+                  Content="Year" IsChecked="{Binding SbShowYear, Mode=TwoWay}" VerticalAlignment="Top" Width="46" Grid.RowSpan="2"/>
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="142,5,0,-4"
+                  Content="Month" IsChecked="{Binding SbShowMonth, Mode=TwoWay}" VerticalAlignment="Top" Width="58" Grid.RowSpan="2"/>
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="200,5,0,-4"
+                  Content="Week" IsChecked="{Binding SbShowWeek, Mode=TwoWay}" VerticalAlignment="Top" Width="51" Grid.RowSpan="2"/>
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="258,5,0,-4"
+                  Content="Day" IsChecked="{Binding SbShowDay, Mode=TwoWay}" VerticalAlignment="Top" Width="46" Grid.RowSpan="2"/>
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="304,5,0,-4"
+                  Content="Hour" IsChecked="{Binding SbShowHour, Mode=TwoWay}" VerticalAlignment="Top" Width="46" Grid.RowSpan="2"/>
+                <CheckBox HorizontalAlignment="Left" Height="24" Margin="357,5,0,-4"
+                  Content="Minute" IsChecked="{Binding SbShowMinute, Mode=TwoWay}" VerticalAlignment="Top" Width="63" Grid.RowSpan="2"/>
+                <CheckBox HorizontalAlignment="Left" Margin="420,5,-62,-4"
+                  Content="Second" IsChecked="{Binding SbShowSecond, Mode=TwoWay}" Width="70" Grid.RowSpan="2"/>
+            </Grid>
+        </Border>
+
+        <!--Grid  Visibility="{Binding DtVisibility}" x:Name="dtGrid2" RenderTransformOrigin="0.5,0.5">
+            <Label Content="Minor" HorizontalAlignment="Left" Margin="54,6,0,-1" VerticalAlignment="Top"/>
+            <ComboBox x:Name="dtMinorCb" HorizontalAlignment="Left" Height="24" Margin="124,7,0,0"  VerticalAlignment="Top" Width="95"/>
+            <Label Content="Major" HorizontalAlignment="Left" Margin="235,4,0,0" VerticalAlignment="Top"/>
+            <ComboBox x:Name="dtMajorCb" HorizontalAlignment="Left" Height="24" Margin="279,7,0,0"  VerticalAlignment="Top" Width="95"/>
+        </-->
+    </Grid>
+</UserControl>

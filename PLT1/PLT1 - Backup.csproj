@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <RootNamespace>OpenWLS.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <BaseOutputPath>..\Client\bin, ..\Server\bin</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WinForms.DataVisualization" Version="1.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\Client.csproj" />
+    <ProjectReference Include="..\Server\Server.csproj" />
+  </ItemGroup>
+
+</Project>

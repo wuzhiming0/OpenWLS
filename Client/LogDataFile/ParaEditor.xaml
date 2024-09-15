@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="OpenWLS.Client.LogDataFile.ParaEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OpenWLS.Client.LogDataFile"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <DataGrid x:Name="dg" AutoGenerateColumns="False" RowHeight="23" Margin="0,25,0,0" CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name"  Binding="{Binding Name}" IsReadOnly="True" Width="*" />
+                <DataGridTextColumn Header="Value" Binding="{Binding Value}" Width="*" />
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*" />                
+                <DataGridTextColumn Header="Zone" Binding="{Binding Zone}" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
